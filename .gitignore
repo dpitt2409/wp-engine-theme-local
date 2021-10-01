@@ -1,0 +1,11 @@
+# Dev Tool Files #
+######################
+node_modules
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+html/.htaccess
+*.esproj
