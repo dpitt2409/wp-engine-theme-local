@@ -12,6 +12,13 @@
 // include( get_query_template( '404' ) );
 // die();
 
-// Redirect to the-atlas.com/request-a-demo so that collateral works before the site is live.
-header('Location: https://the-atlas.com/request-a-demo?utm_campaign=redirect&utm_source=marketedge', true, 302);
-exit;
+
+if (preg_match('#marketedge.the-atlas.com#', $_SERVER['HTTP_HOST'])) {
+  // Redirect to the-atlas.com/request-a-demo so that collateral works before the site is live.
+  header('Location: https://the-atlas.com/request-a-demo?utm_campaign=redirect&utm_source=marketedge', true, 302);
+  exit;
+}
+
+?>
+
+Marketedge...
