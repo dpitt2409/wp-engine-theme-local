@@ -4,7 +4,7 @@
 // create actual templates for everything.
 // ie. single.php, page.php, archive.php etc
 
-global $wp_query;
+// global $wp_query;
 
 // $wp_query->set_404();
 // status_header( 404 );
@@ -12,5 +12,6 @@ global $wp_query;
 // include( get_query_template( '404' ) );
 // die();
 
-?>
-Hello, this is MarketEdge...
+// Redirect to the-atlas.com/request-a-demo so that collateral works before the site is live.
+header('Location: https://the-atlas.com/request-a-demo?utm_campaign=redirect&utm_source=marketedge', true, 302);
+exit;
