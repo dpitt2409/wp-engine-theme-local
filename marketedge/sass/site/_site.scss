@@ -55,55 +55,94 @@ a.btn.button,
 }
 
 footer {
-	background: $black;
+	background: $blue;
+	padding: 60px 80px;
+	.footer-gradient {
+		height: 3px;
+		background: linear-gradient(to right, #e39600, #dbdb69);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
 	&.entry-footer {
 		max-width: 1280px;
 		margin: auto;
 		background: transparent;
 	}
-	.copyright {
-		padding: 55px 0px;
-		background: #fff;
-		color: #bcbcbc;
-	}
-}
+	.site-footer {
+		display: flex;
+		justify-content: space-between;
+		p {
+			margin: 0;
+			letter-spacing: 1px;
+			font-size: 14px;
 
-.site-footer {
-	padding: 60px 0px;
-	color: $white;
-	p {
-		margin: 0;
-		letter-spacing: 1px;
-		font-size: 14px;
-
-		a {
-			text-decoration: none;
-			font-weight: 400;
-			text-transform: initial;
-			color: $white;
-		}
-	}
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0px;
-		li {
-			margin-bottom: 30px;
-			@include media-breakpoint-down(md) {
-				margin-bottom: 10px;
-			}
 			a {
 				text-decoration: none;
-				color: $white;
-				font-size: 18px;
 				font-weight: 400;
 				text-transform: initial;
+				color: $white;
 			}
-			&:last-child {
-				margin-bottom: 0px;
+		}
+		.footer-links {
+			.row {
+				justify-content: flex-end;
+			}
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li {
+				margin-bottom: 15px;
 				@include media-breakpoint-down(md) {
 					margin-bottom: 10px;
 				}
+				a {
+					text-decoration: none;
+					color: $white;
+					font-size: 18px;
+					font-weight: 400;
+					text-transform: initial;
+					i {
+						margin-right: 10px;
+					}
+				}
+				&:last-child {
+					margin-bottom: 0px;
+					@include media-breakpoint-down(md) {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+	ul.privacy-links {
+		list-style: none;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		li {
+			margin-right: 10px;
+			&:before {
+				content: '';
+				display: inline-block;
+				border-left: 1px solid #fff;
+				height: 15px;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+			a {
+				color: $white;
+				text-decoration: none;
+				text-transform: initial;
+				font-weight: 400;
 			}
 		}
 	}

@@ -10,21 +10,67 @@
  */
 
 ?>
-	<footer id="colophon" class="site-footer">
-        <div class="container">
-            <div class="site-info">
-                <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'marketedge' ) ); ?>">
-                    <?php
-                    /* translators: %s: CMS name, i.e. WordPress. */
-                    printf( esc_html__( 'Proudly powered by %s', 'marketedge' ), 'WordPress' );
-                    ?>
+	<footer id="colophon">
+        <div class="footer-gradient"></div>
+        <div class="site-footer row">
+            <div class="site-info site-branding col-md-6">
+                <a href="<?php echo home_url();?>" rel="home">
+                    <?php 
+                    $footer_logo = get_field('footer_logo','option');
+                    if ($footer_logo): ?>
+                        <img src="<?php echo $footer_logo['url'];?>" alt="<?php echo get_bloginfo('name'); ?>" />
+                    <?php endif; ?>
                 </a>
-                <span class="sep"> | </span>
-                    <?php
-                    /* translators: 1: Theme name, 2: Theme author. */
-                    printf( esc_html__( 'Theme: %1$s by %2$s.', 'marketedge' ), 'marketedge', '<a href="http://underscores.me/">Marketedge</a>' );
-                    ?>
             </div>
+            <div class="footer-links col-md-6">
+                <?php
+                if(have_rows('footer_menus', 'option')):
+                    ?>
+                    <div class="row">
+                    <?php
+                    while(have_rows('footer_menus', 'option')): the_row();
+                        ?>
+                        <div class="col-md-3">
+                            <ul>
+                            <?php
+                            if(have_rows('footer_menu_column', 'option')):
+                                while(have_rows('footer_menu_column', 'option')): the_row();
+                                    $footer_link = get_sub_field('footer_link');
+                                    $footer_link_class = get_sub_field('footer_link_class');
+                                    ?>
+                                    <li><a href="<?php echo $footer_link['url'];?>" target="<?php echo $footer_link['target'];?>"><?php if($footer_link_class):?><i class="<?php echo $footer_link_class;?>"></i><?php endif; echo $footer_link['title'];?></a></li>
+                                    <?php
+                                endwhile;
+                            endif;
+                            ?>
+                            </ul>
+                        </div>
+                        <?php
+                    endwhile;
+                    ?>
+                    </div>
+                    <?php
+                endif;
+                ?>
+            </div>
+        </div>
+        <div class="privacy">
+            <?php
+            if(have_rows('footer_privacy_menu', 'option')):
+                ?>
+                <ul class="privacy-links">
+                <?php
+                while(have_rows('footer_privacy_menu', 'option')): the_row();
+                    $privacy_link = get_sub_field('link');
+                    ?>
+                    <li><a href="<?php echo $privacy_link['url'];?>" target="<?php echo $privacy_link['target'];?>"><?php echo $privacy_link['title'];?></a></li>
+                    <?php
+                endwhile;
+                ?>
+                </ul>
+                <?php
+            endif;
+            ?>
         </div>
 	</footer>
 </div>
