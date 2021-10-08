@@ -1,0 +1,93 @@
+/*!
+Theme Name: MarketEdge By The Atlas
+Theme URI: 
+Author: Angela Murrell & Martin McGee
+Description: MarketEdge By The Atlas - Custom Theme
+Version: 1.0.0
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Widgets
+# Content
+    ## Pages
+	## Posts and pages
+    ## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Include Bootstrap grid for media queries from npm package
+sm, md, lg, xl
+@include media-breakpoint-up(md)
+@include media-breakpoint-down(md)
+@include media-breakpoint-only(md)
+--------------------------------------------------------------*/
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import 'normalize';
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import 'typography/typography';
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import 'elements/elements';
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import 'navigation/navigation';
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import 'modules/accessibility';
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import 'modules/alignments';
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import 'site/secondary/widgets';
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import 'site/site';
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import 'modules/infinite-scroll';
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import 'media/media';

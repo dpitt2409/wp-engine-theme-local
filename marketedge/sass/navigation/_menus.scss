@@ -1,0 +1,275 @@
+.site-header {
+	background-color: #ffffff;
+	opacity: 0.9;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+.site-header,
+.site-footer {
+	padding: 15px 80px;
+	@media screen and (max-width: 1299px) {
+		padding: 15px;
+	}
+}
+.site-branding {
+	a {
+		text-transform: initial;
+		svg {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+		img {
+			max-width: 344px;
+			@include media-breakpoint-down(sm) {
+				max-width: 250px;
+			}
+			@media screen and (max-width: 350px) {
+				max-width: 225px;
+			}
+		}
+	}
+}
+.main-navigation {
+	display: block;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: auto;
+				}
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		text-transform: initial;
+		font-size: 18px;
+		color: $black;
+		&:hover {
+			color: $color__brand-highlight;
+		}
+	}
+
+	li {
+		position: relative;
+		&.current_page_item {
+			a {
+				color: $color__brand-highlight;
+			}
+		}
+		@media screen and (min-width: 1300px) {
+			&.register a {
+				background: $color__brand-highlight;
+				color: $white;
+				padding: 6px 15px;
+			}
+		}
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.menu-toggle {
+	-webkit-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+	position: absolute;
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	line-height: 10px;
+	cursor: pointer;
+	outline: none;
+	z-index: 900;
+	top: 30px;
+	right: 20px;
+	@include media-breakpoint-down(sm) {
+		top: 25px;
+	}
+	@media screen and (max-width: 350px) {
+		top: 21px;
+	}
+	span {
+		-webkit-transition: all 0.12s linear;
+		transition: all 0.12s linear;
+		position: absolute;
+		left: 0;
+		display: block;
+		background: $black;
+		width: 100%;
+		height: 2px;
+		&:nth-child(2) {
+			top: 40%;
+		}
+		&:nth-child(3) {
+			top: 80%;
+		}
+	}
+}
+
+.main-navigation.toggled {
+	.menu-toggle {
+		span {
+			&:first-child {
+				-webkit-transform: translateY(6px) translateX(0) rotate(-45deg);
+				transform: translateY(6px) translateX(0) rotate(-45deg);
+				opacity: 1;
+				width: 100%;
+				background: #000;
+			}
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				-webkit-transform: translateY(-10px) translateX(0) rotate(45deg);
+				transform: translateY(-10px) translateX(0) rotate(45deg);
+				opacity: 1;
+				width: 100%;
+				background: #000;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.menu-toggle {
+		display: none;
+	}
+	.site-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		z-index: 100;
+	}
+	main#primary {
+		padding-top: 0px;
+	}
+	.main-navigation {
+		ul {
+			display: flex;
+			@include f-center;
+		}
+		li {
+			margin: 0 20px;
+			text-transform: uppercase;
+			text-align: center;
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+			&.register {
+				&:before {
+					display: none;
+				}
+				a {
+					&:hover {
+						color: $white;
+					}
+				}
+			}
+		}
+		&.toggled ul {
+			display: flex;
+		}
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	.site-main & {
+		margin: 0 0 1.5em;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav-previous {
+		flex: 1 0 50%;
+	}
+
+	.nav-next {
+		text-align: end;
+		flex: 1 0 50%;
+	}
+}
+
+@media screen and (max-width: 1299px) {
+	header#masthead {
+		background: #fff;
+		button.menu-toggle {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			background: black;
+			color: #fff;
+		}
+	}
+	.site-branding a {
+		padding-left: 0px !important;
+	}
+	.admin-bar {
+		header#masthead {
+			button.menu-toggle {
+				top: 52px;
+			}
+		}
+	}
+	.main-navigation {
+		ul {
+			padding: 20px 0px;
+			li {
+				margin-top: 20px;
+				a {
+					font-size: 48px;
+					color: #000;
+					font-weight: 900;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header#masthead {
+		button.menu-toggle {
+			top: 5px;
+			right: 10px;
+		}
+	}
+}
