@@ -128,3 +128,29 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// ACF Options, Configs
+if (function_exists('acf_add_options_page')) {
+
+	$event_settings_page = acf_add_options_page(array(
+		'page_title'    => __('Theme Settings'),
+		'menu_title'    => __('Theme Settings'),
+		'menu_slug'     => 'theme-general-settings'
+	));
+}
+/* 
+* ACF Local JSON
+*/
+add_filter('acf/settings/save_json', 'eventual_acf_json_save_point');
+function eventual_acf_json_save_point( $path ) {
+    // update path
+    $path = dirname(__FILE__) . '/acf-sync';
+    // return
+    return $path;
+}
+add_filter('acf/settings/load_json', 'eventual_acf_json_load_point');
+function eventual_acf_json_load_point( $paths ) {
+    // append path
+    $paths[] = dirname(__FILE__) . '/acf-sync';
+    // return
+    return $paths;
+}

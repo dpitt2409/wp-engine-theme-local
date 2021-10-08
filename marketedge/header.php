@@ -17,7 +17,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+	<?php 
+    wp_head();
+    $header_scripts = get_field('header_scripts', 'option');
+    if($header_scripts):
+        echo $header_scripts;
+    endif;
+    ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -26,7 +32,15 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'marketedge' ); ?></a>
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-            <a href="<?php echo home_url();?>" rel="home"><img src=""/></a>
+            <a href="<?php echo home_url();?>" rel="home">
+            <?php 
+            $logo = get_field('logo','option');
+            if ($logo): ?>
+                <img src="<?php echo $logo['url'];?>" alt="<?php echo get_bloginfo('name'); ?>" />
+            <?php else: ?>
+                <h2><?php echo get_bloginfo('name'); ?></h2>
+            <?php endif; ?>
+            </a>
         </div>
 		<nav id="site-navigation" class="main-navigation">
 			<div role="button" class="menu-toggle" aria-label="Menu Toggle" aria-controls="primary-menu" aria-expanded="false"><span></span><span></span><span></span></div>

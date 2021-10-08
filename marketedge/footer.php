@@ -29,7 +29,13 @@
 	</footer>
 </div>
 
-<?php wp_footer(); ?>
+<?php 
+wp_footer();
+$footer_scripts = get_field('footer_scripts', 'option');
+if($footer_scripts):
+    echo $footer_scripts;
+endif;
+?>
 
 </body>
 </html>
