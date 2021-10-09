@@ -51,7 +51,6 @@ if ( ! function_exists( 'marketedge_setup' ) ) :
 		register_nav_menus(
 			array(
 				'primary' => esc_html__( 'Primary', 'marketedge' ),
-                'footer' => esc_html__( 'Footer', 'marketedge' ),
 			)
 		);
 
