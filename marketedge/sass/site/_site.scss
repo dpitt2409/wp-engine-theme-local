@@ -8,7 +8,7 @@ footer {
 		padding: 0px;
 	}
 	.container {
-		max-width: 1280px;
+		max-width: 1680px;
 		margin: auto;
 	}
 }
@@ -18,52 +18,80 @@ header.entry-header {
 }
 
 a.btn,
-.btn,
-.ab-button {
-	background: $color__brand-highlight;
-	color: $color__background-body;
+.btn {
+	background: $blue;
+	color: $white;
 	text-decoration: none;
-}
-a.btn.button,
-.ab-button {
-	padding: 16px 20px;
+	padding: 10px 20px;
 	font-size: 14px;
 	text-transform: none;
 	font-weight: 500;
 	display: inline-block;
-
+	border-radius: 50px;
+	text-transform: uppercase;
 	@include media-breakpoint-up(lg) {
 		font-size: 24px;
-		padding: 15px 30px;
-	}
-	&.large {
-		font-size: 30px;
-		line-height: 35px;
-		font-weight: 900;
-		text-transform: uppercase;
-		@include media-breakpoint-down(md) {
-			font-size: 21px;
-			line-height: 25px;
-			padding: 12px 23px;
-		}
 	}
 	&.medium {
 		font-size: 24px;
 		font-weight: 900;
 		text-transform: uppercase;
 	}
+	&.secondary {
+		background: $color__brand-highlight;
+	}
 }
-
+span.slash {
+	color: $color__brand-highlight;
+}
+section.hero {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 7% 0px;
+	h1 {
+		text-transform: uppercase;
+		color: $blue;
+		letter-spacing: 0.62px;
+		padding: 0px;
+	}
+	p {
+		font-size: 24px;
+	}
+	a {
+		margin-top: 20px;
+	}
+}
+section.start-form {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 10% 0px;
+	h2 {
+		text-transform: uppercase;
+		color: $white;
+		letter-spacing: 0.49px;
+		padding: 0px;
+		margin: 0px;
+	}
+	p {
+		font-size: 24px;
+		letter-spacing: 0.24px;
+		color: $white;
+	}
+}
+.gradient-line {
+	height: 3px;
+	background: linear-gradient(to right, #e39600, #dbdb69);
+	width: 100%;
+}
 footer {
 	background: $blue;
 	padding: 60px 80px;
-	.footer-gradient {
-		height: 3px;
-		background: linear-gradient(to right, #e39600, #dbdb69);
+	.gradient-line {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
 	}
 	&.entry-footer {
 		max-width: 1280px;

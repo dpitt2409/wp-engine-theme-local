@@ -10,6 +10,13 @@
 	@media screen and (max-width: 1299px) {
 		padding: 15px;
 	}
+	.gradient-line {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
 }
 .site-branding {
 	a {
@@ -64,9 +71,10 @@
 	a {
 		display: block;
 		text-decoration: none;
-		text-transform: initial;
-		font-size: 18px;
-		color: $black;
+		text-transform: uppercase;
+		font-size: 16px;
+		color: $blue;
+		font-weight: 600;
 		&:hover {
 			color: $color__brand-highlight;
 		}

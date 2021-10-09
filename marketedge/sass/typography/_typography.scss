@@ -12,7 +12,7 @@ $font__itc: 'proxima-nova';
 // stylelint-enable value-keyword-case
 $font__code: monaco, consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 $font__pre: 'Courier 10 Pitch', courier, monospace;
-$font__size: 1.125rem;
+$font__size: 1.5rem;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
@@ -22,7 +22,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: $color__text-main;
+	color: $blue;
 	font-family: $font__main;
 	font-size: $font__size;
 	line-height: $font__line-height-body;

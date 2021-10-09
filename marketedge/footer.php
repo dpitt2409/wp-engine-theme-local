@@ -9,9 +9,42 @@
  * @package Marketedge
  */
 
+// Check to see if we should show global form
+$global_footer_form = get_field('global_footer_form', 'option');
+$display_on_pages = $global_footer_form['display_on_pages'];
+if($display_on_pages):
+    $current_page = get_the_ID();
+    if (in_array($current_page, $display_on_pages)):
+        $background = $global_footer_form['background'];
+        $heading = $global_footer_form['heading'];
+        $content = $global_footer_form['content'];
+        $embed_form = $global_footer_form['embed_form'];
+        ?>
+        <section class="start-form" style="background: url(<?php echo $background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <?php if($heading):?>
+                            <h2><span class="slash">/</span> <?php echo $heading;?></h2>
+                        <?php endif;?>
+                        <?php if($content):?>
+                            <p><?php echo $content;?></p>
+                        <?php endif;?>
+                    </div>
+                    <div class="col-md-6">
+                        <?php if($embed_form):?>
+                            <?php echo $embed_form;?>
+                        <?php endif;?>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php
+    endif;
+endif;
 ?>
 	<footer id="colophon">
-        <div class="footer-gradient"></div>
+        <div class="gradient-line"></div>
         <div class="site-footer row">
             <div class="site-info site-branding col-md-6">
                 <a href="<?php echo home_url();?>" rel="home">
