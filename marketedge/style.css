@@ -8723,8 +8723,85 @@ section.playbooks .playbook .playbook-content ul {
   list-style: auto;
 }
 
-section.hero p strong {
+.page-template-page-pricing section.hero p strong {
   color: #e39600;
+}
+.page-template-page-pricing section.tables {
+  padding: 100px 0px;
+}
+.page-template-page-pricing section.tables table {
+  border-collapse: collapse;
+}
+.page-template-page-pricing section.tables table,
+.page-template-page-pricing section.tables th,
+.page-template-page-pricing section.tables td {
+  border: 1px solid #bcbcbc;
+  background: #fff;
+}
+.page-template-page-pricing section.tables th,
+.page-template-page-pricing section.tables td {
+  padding: 20px;
+}
+.page-template-page-pricing section.tables th {
+  text-align: left;
+  color: #fff;
+  font-weight: 900;
+  width: 15%;
+}
+.page-template-page-pricing section.tables th:first-child {
+  width: auto;
+}
+.page-template-page-pricing section.tables td {
+  font-size: 18px;
+  color: #333333;
+}
+.page-template-page-pricing section.tables h3 {
+  margin: 0;
+}
+.page-template-page-pricing section.tables h3.large {
+  font-size: 21px;
+  line-height: 26px;
+}
+.page-template-page-pricing section.tables h3.default {
+  font-size: 16px;
+  line-height: 22px;
+}
+.page-template-page-pricing section.tables span.green-check {
+  font-size: 24px;
+  font-weight: 900;
+  color: #e39600;
+}
+.page-template-page-pricing section.tables .plan-table table,
+.page-template-page-pricing section.tables .inperson-table table,
+.page-template-page-pricing section.tables .virtual-table table {
+  overflow-x: auto;
+}
+.page-template-page-pricing section.tables .inperson-table > h3,
+.page-template-page-pricing section.tables .virtual-table > h3 {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.page-template-page-pricing section.tables .plan-table {
+  margin-bottom: 120px;
+}
+.page-template-page-pricing section.tables .plan-table > h2 {
+  margin-bottom: 10px;
+}
+.page-template-page-pricing section.tables .inperson-table {
+  margin-bottom: 60px;
+}
+.page-template-page-pricing section.tables .inperson-table > h3 {
+  color: #2ba8b9;
+}
+.page-template-page-pricing section.tables .inperson-table th {
+  background: #2ba8b9;
+}
+.page-template-page-pricing section.tables .virtual-table > h3 {
+  color: #05cc7a;
+}
+.page-template-page-pricing section.tables .virtual-table th {
+  background: #05cc7a;
 }
 
 section.impact {

@@ -94,6 +94,294 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_61630fd486ff6",
+            "label": "Pricing Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61630fee86ff7",
+            "label": "Pricing Table",
+            "name": "pricing_table",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_616314952c016",
+                    "label": "Table Heading",
+                    "name": "table_heading",
+                    "type": "text",
+                    "instructions": "(optional)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6163100a86ff8",
+                    "label": "Table Row Headings",
+                    "name": "table_row_headings",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 1,
+                    "layout": "table",
+                    "button_label": "Add Table Row",
+                    "sub_fields": [
+                        {
+                            "key": "field_6163102186ff9",
+                            "label": "Table Row Heading",
+                            "name": "table_row_heading",
+                            "type": "repeater",
+                            "instructions": "Add table cell headings",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "",
+                            "button_label": "Add Cell Headings",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6163103186ffa",
+                                    "label": "Cell Text",
+                                    "name": "cell_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_6163103f86ffb",
+                                    "label": "Cell Background Color",
+                                    "name": "cell_background_color",
+                                    "type": "color_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "#3a6077",
+                                    "enable_opacity": 0,
+                                    "return_format": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_6163108286ffc",
+                    "label": "Table Row Cells",
+                    "name": "table_row_cells",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "Add Table Row",
+                    "sub_fields": [
+                        {
+                            "key": "field_6163108286ffd",
+                            "label": "Table Row Cell",
+                            "name": "table_row_cell",
+                            "type": "repeater",
+                            "instructions": "Number of Cells should match the number of Table Row Headings.\r\nIf you added 4 Table Row Headings, add 4 Table Cells.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "Add Table Cell",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6163108286ffe",
+                                    "label": "Cell Background Color",
+                                    "name": "cell_background_color",
+                                    "type": "color_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "enable_opacity": 0,
+                                    "return_format": "string"
+                                },
+                                {
+                                    "key": "field_616310d587000",
+                                    "label": "Show Checkmark",
+                                    "name": "show_checkmark",
+                                    "type": "true_false",
+                                    "instructions": "Will show checkmark above text.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_616310ed87001",
+                                    "label": "Cell Heading Text",
+                                    "name": "cell_heading_text",
+                                    "type": "textarea",
+                                    "instructions": "(optional)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 3,
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_6163110c87002",
+                                    "label": "Cell Heading Size",
+                                    "name": "cell_heading_size",
+                                    "type": "select",
+                                    "instructions": "Large for Headings\/Bold<\/br>\r\nSmall for Default",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "default": "Default",
+                                        "large": "Large"
+                                    },
+                                    "default_value": "default",
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_6163112787003",
+                                    "label": "Cell Text",
+                                    "name": "cell_text",
+                                    "type": "textarea",
+                                    "instructions": "(optional)",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_6163113687004",
+                                    "label": "Cell Text Color",
+                                    "name": "cell_text_color",
+                                    "type": "color_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "#000000",
+                                    "enable_opacity": 0,
+                                    "return_format": "string"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "location": [
@@ -113,5 +401,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1633831186
+    "modified": 1633883299
 }
