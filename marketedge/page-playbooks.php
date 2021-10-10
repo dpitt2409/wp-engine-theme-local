@@ -48,7 +48,7 @@ get_header();
                             $playbooks_heading = get_sub_field('playbooks_heading');
                             if( have_rows('playbook') ): 
                                 ?>
-                                <div class="row">
+                                <div class="row playbook">
                                     <div class="col-md-4">
                                         <?php if($playbooks_heading):?>
                                             <h2><?php echo $playbooks_heading;?></h2>
@@ -61,7 +61,7 @@ get_header();
                                             $playbook_heading = get_sub_field('playbook_heading');
                                             $playbook_content = get_sub_field('playbook_content');
                                             ?>
-                                            <div class="col-md-6">
+                                            <div class="playbook-content col-md-6">
                                                 <?php
                                                 if($playbook_heading):
                                                     ?>

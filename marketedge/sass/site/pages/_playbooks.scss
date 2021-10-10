@@ -1,0 +1,26 @@
+section.playbooks {
+	h2 {
+		font-size: 36px;
+		line-height: 44px;
+		text-align: center;
+		strong {
+			color: $color__brand-highlight;
+			font-weight: 700;
+		}
+	}
+	.playbook {
+		margin-bottom: 60px;
+		.playbook-content {
+			@include media-breakpoint-up(md) {
+				padding: 0px 40px;
+			}
+			h2 {
+				text-align: left;
+			}
+			ul {
+				margin: 0px;
+				list-style: auto;
+			}
+		}
+	}
+}

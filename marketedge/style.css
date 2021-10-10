@@ -8698,6 +8698,35 @@ footer ul.privacy-links li a {
   margin: 10px 0px;
 }
 
+section.playbooks h2 {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+section.playbooks h2 strong {
+  color: #e39600;
+  font-weight: 700;
+}
+section.playbooks .playbook {
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  section.playbooks .playbook .playbook-content {
+    padding: 0px 40px;
+  }
+}
+section.playbooks .playbook .playbook-content h2 {
+  text-align: left;
+}
+section.playbooks .playbook .playbook-content ul {
+  margin: 0px;
+  list-style: auto;
+}
+
+section.hero p strong {
+  color: #e39600;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
