@@ -20,6 +20,10 @@ h1 {
 		padding: 0;
 		line-height: 40px;
 	}
+	strong {
+		font-weight: 700;
+		color: $color__brand-highlight;
+	}
 }
 h2 {
 	font-size: 52px;
