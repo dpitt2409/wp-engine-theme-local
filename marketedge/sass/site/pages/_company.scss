@@ -1,0 +1,55 @@
+section.impact {
+	color: $white;
+	.row {
+		align-items: center;
+		.impact-content {
+			@include media-breakpoint-up(lg) {
+				padding-right: 100px;
+			}
+			h2 {
+				color: $white;
+				font-size: 62px;
+				line-height: 75px;
+				margin: 0;
+			}
+		}
+		img {
+			border-radius: 50px;
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+		}
+	}
+}
+section.team-members {
+	.container {
+		max-width: 1400px;
+		margin: auto;
+	}
+	h2 {
+		text-align: center;
+	}
+	.team-member {
+		@include media-breakpoint-up(lg) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		img {
+			width: 100%;
+		}
+		h2 {
+			text-align: left;
+			font-size: 28px;
+			line-height: 29px;
+			letter-spacing: 0.28px;
+			margin-bottom: 0px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 0.18px;
+			color: #717171;
+			margin-top: 10px;
+		}
+	}
+}

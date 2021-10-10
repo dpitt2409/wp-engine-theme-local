@@ -8727,6 +8727,61 @@ section.hero p strong {
   color: #e39600;
 }
 
+section.impact {
+  color: #fff;
+}
+section.impact .row {
+  align-items: center;
+}
+@media (min-width: 992px) {
+  section.impact .row .impact-content {
+    padding-right: 100px;
+  }
+}
+section.impact .row .impact-content h2 {
+  color: #fff;
+  font-size: 62px;
+  line-height: 75px;
+  margin: 0;
+}
+section.impact .row img {
+  border-radius: 50px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+section.team-members .container {
+  max-width: 1400px;
+  margin: auto;
+}
+section.team-members h2 {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  section.team-members .team-member {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+section.team-members .team-member img {
+  width: 100%;
+}
+section.team-members .team-member h2 {
+  text-align: left;
+  font-size: 28px;
+  line-height: 29px;
+  letter-spacing: 0.28px;
+  margin-bottom: 0px;
+}
+section.team-members .team-member p {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.18px;
+  color: #717171;
+  margin-top: 10px;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
