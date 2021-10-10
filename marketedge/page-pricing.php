@@ -109,7 +109,7 @@ get_header();
                                                             ?>
                                                             <td style="background:<?php echo $cell_background_color;?>;text-align:<?php echo $cell_text_align;?>">
                                                                 <?php if($show_checkmark):?>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="46.728" height="34.846" viewBox="0 0 46.728 34.846"><defs><style>.a{fill:#05cc7a;}</style></defs><path class="a" d="M15.871,38.739.684,23.552a2.337,2.337,0,0,1,0-3.3l3.3-3.3a2.336,2.336,0,0,1,3.3,0l10.231,10.23L39.436,5.262a2.337,2.337,0,0,1,3.3,0l3.3,3.3a2.337,2.337,0,0,1,0,3.3L19.175,38.739A2.336,2.336,0,0,1,15.871,38.739Z" transform="translate(0 -4.577)"/></svg>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="46.728" height="34.846" viewBox="0 0 46.728 34.846"><defs><style>.a{fill:#e39600;}</style></defs><path class="a" d="M15.871,38.739.684,23.552a2.337,2.337,0,0,1,0-3.3l3.3-3.3a2.336,2.336,0,0,1,3.3,0l10.231,10.23L39.436,5.262a2.337,2.337,0,0,1,3.3,0l3.3,3.3a2.337,2.337,0,0,1,0,3.3L19.175,38.739A2.336,2.336,0,0,1,15.871,38.739Z" transform="translate(0 -4.577)"/></svg>
                                                                 <?php endif;?>
                                                                 <?php if($cell_heading_text):?>
                                                                     <h3 style="color: <?php echo $cell_text_color;?>" class="<?php echo $cell_heading_size;?>">
