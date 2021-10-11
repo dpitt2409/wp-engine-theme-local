@@ -89,7 +89,7 @@ get_header();
                                         $name = get_sub_field('name');
                                         $title = get_sub_field('title');
                                         ?>
-                                        <div class="col-md-3 team-member">
+                                        <div class="col-lg-3 col-md-6 team-member">
                                             <?php if($image): ?>
                                                 <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>" />
                                             <?php endif; ?>
