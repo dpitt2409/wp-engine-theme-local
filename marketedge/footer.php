@@ -19,21 +19,25 @@ if($display_on_pages):
         $heading = $global_footer_form['heading'];
         $content = $global_footer_form['content'];
         $embed_form = $global_footer_form['embed_form'];
+        $image = $global_footer_form['image'];
         ?>
         <section class="start-form" style="background: url(<?php echo $background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-8 text-center">
                         <?php if($heading):?>
                             <h2><span class="slash">/</span> <?php echo $heading;?></h2>
                         <?php endif;?>
                         <?php if($content):?>
                             <p><?php echo $content;?></p>
                         <?php endif;?>
-                    </div>
-                    <div class="col-md-6">
                         <?php if($embed_form):?>
                             <?php echo $embed_form;?>
+                        <?php endif;?>
+                    </div>
+                    <div class="col-md-4">
+                        <?php if($image):?>
+                            <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>" />
                         <?php endif;?>
                     </div>
                 </div>

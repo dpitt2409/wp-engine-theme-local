@@ -96,7 +96,7 @@ function marketedge_scripts() {
 	wp_enqueue_style( 'marketedge-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'marketedge-style', 'rtl', 'replace' );
 
-    wp_enqueue_script( 'marketedge-script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'marketedge-script', get_template_directory_uri() . '/js/script.js', array('jquery'), _S_VERSION, true );
 	wp_enqueue_script( 'marketedge-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

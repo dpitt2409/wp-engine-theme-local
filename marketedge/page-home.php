@@ -21,7 +21,7 @@ get_header();
                 <section class="hero" style="background: url(<?php echo $hero_background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 text-center">
+                            <div class="col">
                                 <?php if($hero_heading):?>
                                     <h1><?php echo $hero_heading;?></h1>
                                 <?php endif;?>
@@ -32,24 +32,21 @@ get_header();
                                     <a class="btn primary" href="<?php echo $hero_cta['url'];?>" target="<?php echo $hero_cta['url'];?>"><?php echo $hero_cta['title'];?></a>
                                 <?php endif;?>
                             </div>
-                            <div class="col-md-6"></div>
                         </div>
                     </div>
                 </section>
                 <?php
             endif;
 
-            $accelerate_background = get_field('accelerate_background');
             $accelerate_heading = get_field('accelerate_heading');
             $accelerate_content = get_field('accelerate_content');
             $accelerate_cta = get_field('accelerate_cta');
-            if( $accelerate_background ):
+            if( $accelerate_heading ):
                 ?>
-                <section class="accelerate" style="background: url(<?php echo $accelerate_background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
+                <section class="accelerate">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6 text-center">
+                            <div class="col text-center">
                                 <?php if($accelerate_heading):?>
                                     <h2><?php echo $accelerate_heading;?></h2>
                                 <?php endif;?>
@@ -81,7 +78,7 @@ get_header();
                                 $result_heading = get_sub_field('heading');
                                 $result_content = get_sub_field('content');
                                 ?>
-                                <div class="result col-md-3">
+                                <div class="result col-lg-3 col-md-6">
                                     <div class="result-image">
                                         <img src="<?php echo $result_image['url'];?>" alt="<?php echo $result_image['alt'];?>" />
                                     </div>
@@ -106,7 +103,7 @@ get_header();
             $data_content = get_field('data_content');
             if( $data_background ):
                 ?>
-                <section class="data" style="background: url(<?php echo $data_background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
+                <section class="data" style="background: url(<?php echo $data_background['url'];?>);background-repeat:no-repeat;background-position:center top;background-size:cover;">
                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
@@ -124,7 +121,7 @@ get_header();
             endif;
 
             if(have_rows('companies_logos')):
-                $companies_headline = get_field('results_heading');
+                $companies_headline = get_field('companies_headline');
                 ?>
                 <section class="companies">
                     <div class="container">

@@ -53,5 +53,4 @@
 			);
 			?>
 		</nav>
-        <div class="gradient-line"></div>
 	</header><!-- #masthead -->
