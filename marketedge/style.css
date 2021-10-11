@@ -8724,12 +8724,16 @@ footer ul.privacy-links li a {
 }
 .home section.companies .companies {
   justify-content: center;
+  align-items: center;
 }
 .home section.companies .companies .company {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .home section.companies .companies .company .company-image {
   text-align: center;
+}
+.home section.companies .companies .company .company-image img {
+  max-width: 80%;
 }
 
 .page-template.page-template-page-intelligence {

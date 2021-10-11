@@ -99,10 +99,14 @@
 		}
 		.companies {
 			justify-content: center;
+			align-items: center;
 			.company {
-				margin-bottom: 20px;
+				margin-bottom: 40px;
 				.company-image {
 					text-align: center;
+					img {
+						max-width: 80%;
+					}
 				}
 			}
 		}

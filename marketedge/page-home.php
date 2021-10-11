@@ -133,7 +133,7 @@ get_header();
                             while(have_rows('companies_logos')): the_row();
                                 $company_image = get_sub_field('image');
                                 ?>
-                                <div class="company col-lg-2 col-md-3 col-sm-6">
+                                <div class="company col-lg-3 col-md-6">
                                     <div class="company-image">
                                         <img src="<?php echo $company_image['url'];?>" alt="<?php echo $company_image['alt'];?>" />
                                     </div>
