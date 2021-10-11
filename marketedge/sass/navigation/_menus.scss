@@ -1,5 +1,5 @@
 .site-header {
-	background-color: $black;
+	background-color: $blue;
 	position: fixed;
 	width: 100%;
 	z-index: 99;
@@ -7,12 +7,12 @@
 .home .site-header {
 	background-color: transparent;
 	@media screen and (max-width: 1299px) {
-		background-color: $black;
+		background-color: $blue;
 	}
 }
 body.scrolled {
 	.site-header {
-		background-color: $black;
+		background-color: $blue;
 		opacity: 0.9;
 	}
 }
