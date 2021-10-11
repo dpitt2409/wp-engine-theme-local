@@ -215,9 +215,9 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "#3a6077",
+                                    "default_value": "#000000",
                                     "enable_opacity": 0,
-                                    "return_format": ""
+                                    "return_format": "string"
                                 }
                             ]
                         }
@@ -401,5 +401,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1633883299
+    "modified": 1633979746
 }

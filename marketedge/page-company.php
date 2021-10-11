@@ -21,8 +21,7 @@ get_header();
                 <section class="hero" style="background: url(<?php echo $hero_background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6 text-center">
+                            <div class="col text-center">
                                 <?php if($hero_heading):?>
                                     <h1><?php echo $hero_heading;?></h1>
                                 <?php endif;?>

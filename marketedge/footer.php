@@ -67,7 +67,7 @@ endif;
                     <?php
                     while(have_rows('footer_menus', 'option')): the_row();
                         ?>
-                        <div class="col-md-3">
+                        <div class="col-lg-3 col-md-4">
                             <ul>
                             <?php
                             if(have_rows('footer_menu_column', 'option')):

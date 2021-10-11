@@ -1,6 +1,10 @@
 .page-template-page-pricing {
 	section.hero {
+		h1 {
+			color: $black;
+		}
 		p {
+			color: $black;
 			strong {
 				color: $color__brand-highlight;
 			}

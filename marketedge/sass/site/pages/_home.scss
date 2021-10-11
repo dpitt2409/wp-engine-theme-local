@@ -19,6 +19,10 @@
 			font-size: 52px;
 			line-height: 59px;
 			color: $black;
+			@include media-breakpoint-down(md) {
+				font-size: 36px;
+				line-height: 40px;
+			}
 			strong {
 				font-weight: 700;
 				color: $color__brand-highlight;
@@ -69,9 +73,13 @@
 			margin: auto;
 			h2 {
 				color: $white;
-				font-size: h2px;
-				line-height: 64px;
+				font-size: 52px;
+				line-height: 59px;
 				text-transform: uppercase;
+				@include media-breakpoint-down(md) {
+					font-size: 36px;
+					line-height: 40px;
+				}
 			}
 			p {
 				color: $white;
@@ -93,6 +101,9 @@
 			justify-content: center;
 			.company {
 				margin-bottom: 20px;
+				.company-image {
+					text-align: center;
+				}
 			}
 		}
 	}

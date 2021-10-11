@@ -83,6 +83,12 @@ section.start-form {
 		font-size: 24px;
 		letter-spacing: 0.24px;
 		color: $white;
+		@include media-breakpoint-up(lg) {
+			padding: 0px 60px;
+		}
+	}
+	img {
+		width: 100%;
 	}
 }
 .gradient-line {
@@ -92,8 +98,11 @@ section.start-form {
 }
 footer {
 	background: $black;
-	padding: 60px 80px;
+	padding: 60px 15px;
 	position: relative;
+	@include media-breakpoint-up(lg) {
+		padding: 60px 80px;
+	}
 	.gradient-line {
 		position: absolute;
 		top: 0;
@@ -141,6 +150,7 @@ footer {
 					text-transform: initial;
 					i {
 						margin-right: 10px;
+						display: inline;
 					}
 				}
 				&:last-child {

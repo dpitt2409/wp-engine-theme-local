@@ -21,8 +21,7 @@ get_header();
                 <section class="hero" style="background: url(<?php echo $hero_background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6 text-center">
+                            <div class="col text-center">
                                 <?php if($hero_heading):?>
                                     <h1><?php echo $hero_heading;?></h1>
                                 <?php endif;?>
@@ -30,7 +29,7 @@ get_header();
                                     <p><?php echo $hero_content;?></p>
                                 <?php endif;?>
                                 <?php if($hero_cta):?>
-                                    <a class="btn primary" href="<?php echo $hero_cta['url'];?>" target="<?php echo $hero_cta['url'];?>"><?php echo $hero_cta['title'];?></a>
+                                    <a class="btn secondary" href="<?php echo $hero_cta['url'];?>" target="<?php echo $hero_cta['url'];?>"><?php echo $hero_cta['title'];?></a>
                                 <?php endif;?>
                             </div>
                         </div>
@@ -49,7 +48,7 @@ get_header();
                             if( have_rows('playbook') ): 
                                 ?>
                                 <div class="row playbook">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 playbooks-heading">
                                         <?php if($playbooks_heading):?>
                                             <h2><?php echo $playbooks_heading;?></h2>
                                         <?php endif;?>
