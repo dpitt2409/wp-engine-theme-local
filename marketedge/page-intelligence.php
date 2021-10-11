@@ -16,13 +16,12 @@ get_header();
             $hero_heading = get_field('hero_heading');
             $hero_content = get_field('hero_content');
             $hero_cta = get_field('hero_cta');
-            if( $hero_background ): 
+            if( $hero_heading ): 
                 ?>
-                <section class="hero" style="background: url(<?php echo $hero_background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
+                <section class="hero" <?php if($hero_background):?>style="background: url(<?php echo $hero_background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;"<?php endif;?>>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6 text-center">
+                            <div class="col text-center">
                                 <?php if($hero_heading):?>
                                     <h1><?php echo $hero_heading;?></h1>
                                 <?php endif;?>
@@ -30,7 +29,7 @@ get_header();
                                     <p><?php echo $hero_content;?></p>
                                 <?php endif;?>
                                 <?php if($hero_cta):?>
-                                    <a class="btn primary" href="<?php echo $hero_cta['url'];?>" target="<?php echo $hero_cta['url'];?>"><?php echo $hero_cta['title'];?></a>
+                                    <a class="btn secondary" href="<?php echo $hero_cta['url'];?>" target="<?php echo $hero_cta['url'];?>"><?php echo $hero_cta['title'];?></a>
                                 <?php endif;?>
                             </div>
                         </div>
@@ -50,12 +49,13 @@ get_header();
                             $icon_content = get_sub_field('content');
                             ?>
                             <div class="icon row">
-                                <div class="icon-image col-lg-6">
+                                <div class="col-lg-4"></div>
+                                <div class="icon-image col-lg-4">
                                     <?php if($icon_image): ?>
                                         <img src="<?php echo $icon_image['url'];?>" alt="<?php echo $icon_image['alt'];?>" />
                                     <?php endif; ?>
                                 </div>
-                                <div class="icon-content col-lg-6">
+                                <div class="icon-content col-lg-4">
                                     <?php if($icon_heading): ?>
                                         <h2><span class="slash">/</span> <?php echo $icon_heading;?></h2>
                                     <?php endif; ?>
