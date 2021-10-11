@@ -267,7 +267,7 @@
                     "collapsed": "",
                     "min": 0,
                     "max": 0,
-                    "layout": "table",
+                    "layout": "row",
                     "button_label": "Add Team Member",
                     "sub_fields": [
                         {
@@ -317,7 +317,7 @@
                             "key": "field_61624be36cce0",
                             "label": "Title",
                             "name": "title",
-                            "type": "text",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -328,9 +328,9 @@
                             },
                             "default_value": "",
                             "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br"
                         }
                     ]
                 }
@@ -354,5 +354,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1633832429
+    "modified": 1633982497
 }
