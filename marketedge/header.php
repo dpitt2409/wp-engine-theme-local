@@ -27,6 +27,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php
+    $body_scripts = get_field('body_scripts', 'option');
+    if($body_scripts):
+        echo $body_scripts;
+    endif;
+?>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'marketedge' ); ?></a>
