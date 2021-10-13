@@ -35,11 +35,11 @@ if($display_on_pages):
                             <?php echo $embed_form;?>
                         <?php endif;?>
                     </div>
-                    <div class="col-md-4">
-                        <?php if($image):?>
-                            <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>" />
-                        <?php endif;?>
-                    </div>
+                    <?php if($image):?>
+                        <div class="col-md-4">
+                                <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>" />
+                        </div>
+                    <?php endif;?>
                 </div>
             </div>
         </section>
