@@ -21,7 +21,7 @@ if($display_on_pages):
         $embed_form = $global_footer_form['embed_form'];
         $image = $global_footer_form['image'];
         ?>
-        <section class="start-form" style="background: url(<?php echo $background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
+        <section id="startForm" class="start-form" style="background: url(<?php echo $background['url'];?>);background-repeat:no-repeat;background-position:center;background-size:cover;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 text-center">
