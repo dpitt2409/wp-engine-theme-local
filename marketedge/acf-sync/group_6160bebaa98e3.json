@@ -244,10 +244,10 @@
             "sub_fields": [
                 {
                     "key": "field_6160c01d7c7cc",
-                    "label": "Image",
-                    "name": "image",
-                    "type": "image",
-                    "instructions": "",
+                    "label": "Icon",
+                    "name": "Icon",
+                    "type": "text",
+                    "instructions": "Font awesome icon e.g. &lt;i class=\"fas fa-stopwatch\"&gt;&lt;\/i&gt;",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -255,16 +255,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "preview_size": "medium",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_6160c02f7c7cd",
@@ -482,5 +477,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1633739395
+    "modified": 1634175041
 }

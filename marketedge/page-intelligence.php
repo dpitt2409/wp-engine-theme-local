@@ -52,7 +52,7 @@ get_header();
                                 <div class="col-lg-4"></div>
                                 <div class="icon-image col-lg-4">
                                     <?php if($icon_image): ?>
-                                        <img src="<?php echo $icon_image['url'];?>" alt="<?php echo $icon_image['alt'];?>" />
+                                        <?php echo $icon_image;?>
                                     <?php endif; ?>
                                 </div>
                                 <div class="icon-content col-lg-4">

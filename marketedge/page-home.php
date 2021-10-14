@@ -74,14 +74,16 @@ get_header();
                         <div class="results row">
                             <?php
                             while(have_rows('results')): the_row();
-                                $result_image = get_sub_field('image');
+                                $result_icon = get_sub_field('Icon');
                                 $result_heading = get_sub_field('heading');
                                 $result_content = get_sub_field('content');
                                 ?>
                                 <div class="result col-lg-3 col-md-6">
-                                    <div class="result-image">
-                                        <img src="<?php echo $result_image['url'];?>" alt="<?php echo $result_image['alt'];?>" />
-                                    </div>
+                                    <?php if($result_icon):?>
+                                        <div class="result-image text-center">
+                                            <?php echo $result_icon;?>
+                                        </div>
+                                    <?php endif;?>
                                     <?php if($result_heading):?>
                                         <h2><span class="slash">/</span> <?php echo $result_heading;?></h2>
                                     <?php endif;?>

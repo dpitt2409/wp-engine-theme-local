@@ -32,8 +32,10 @@
 			.icon-image {
 				padding: 0px;
 				text-align: center;
-				img {
-					max-width: 220px;
+				margin-bottom: 40px;
+				i {
+					font-size: 150px;
+					color: $white;
 				}
 			}
 			@include media-breakpoint-up(lg) {

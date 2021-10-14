@@ -45,12 +45,10 @@
 				padding: 0px 30px;
 			}
 			margin-bottom: 40px;
-			img {
-				object-fit: cover;
-				object-position: center;
-				border-radius: 50px;
-				max-height: 290px;
-				width: 100%;
+			.result-image {
+				i {
+					font-size: 100px;
+				}
 			}
 			h2 {
 				font-size: 28px;
