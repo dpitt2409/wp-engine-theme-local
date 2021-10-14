@@ -91,7 +91,7 @@ get_header();
                                         ?>
                                         <div class="col-lg-3 col-md-6 team-member">
                                             <?php if($image): ?>
-                                                <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>" />
+                                                <img src="<?php echo $image['url'];?>" alt="<?php echo $name.' '.$title;?>" />
                                             <?php endif; ?>
                                             <?php if($name): ?>
                                                 <h2><?php echo $name;?></h2>
