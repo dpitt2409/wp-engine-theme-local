@@ -54,7 +54,7 @@ get_header();
                                     <p><?php echo $accelerate_content;?></p>
                                 <?php endif;?>
                                 <?php if($accelerate_cta):?>
-                                    <a class="btn primary" href="<?php echo $accelerate_cta['url'];?>" target="<?php echo $accelerate_cta['url'];?>"><?php echo $accelerate_cta['title'];?></a>
+                                    <a class="btn primary" href="<?php echo $accelerate_cta['url'];?>" target="<?php echo $accelerate_cta['target'];?>"><?php echo $accelerate_cta['title'];?></a>
                                 <?php endif;?>
                             </div>
                         </div>
