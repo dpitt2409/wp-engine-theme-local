@@ -58,6 +58,9 @@
 				line-height: 29px;
 				letter-spacing: 0.28px;
 				text-transform: initial;
+				@include media-breakpoint-up(lg) {
+					min-height: 60px;
+				}
 			}
 			p {
 				font-size: 18px;

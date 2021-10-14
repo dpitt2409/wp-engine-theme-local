@@ -4,10 +4,11 @@
 800	Extra Bold
 900	Black 
 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
 
 // stylelint-disable value-keyword-case
-$font__main: 'proxima-nova', sans-serif;
-$font__itc: 'proxima-nova';
+$font__main: 'Montserrat', sans-serif;
+$font__itc: 'Montserrat', sans-serif;
 
 // stylelint-enable value-keyword-case
 $font__code: monaco, consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
