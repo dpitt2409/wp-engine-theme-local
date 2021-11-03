@@ -88,6 +88,42 @@ get_header();
                 <?php
             endif;
 
+            if( have_rows('resources_group') ): 
+                // resources groups
+                $resources_group_count = 0;
+                ?>
+                <section class="resources-groups">
+                    <div class="container">
+                        <?php 
+                        while( have_rows('resources_group') ): the_row();
+                            if( get_sub_field('resources_group_headline') ): ?>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="resources-section-heading"><?php the_sub_field('resources_group_headline'); ?></h2>
+                                    </div>
+                                </div>
+                                <?php 
+                            endif; 
+                            
+                            if( have_rows('group_download_document') ): ?>
+                                <div class="row resource-downloads resource-downloads-<?php echo $resources_group_count; ?>">
+                                    <?php while( have_rows('group_download_document') ): the_row(); ?>
+                                    <div class="resource col-md-4">
+                                        <?php
+                                        get_template_part( 'partials/partial', 'download' );
+                                        ?>
+                                    </div>
+                                    <?php endwhile; ?>
+                                </div>
+                                <?php 
+                            endif;
+                            $resources_group_count++;
+                        endwhile;
+                        ?>
+                    </div>
+                </section>
+                <?php
+            endif;
 
             if(get_the_content()):
                 ?>

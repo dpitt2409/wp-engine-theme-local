@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.73 35.06"><defs><style>.a{fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px;}</style></defs><rect class="a" x="1" y="6.02" width="46.73" height="28.04"/><rect class="a" x="1" y="1" width="46.73" height="5.02"/><polygon class="a" points="20.45 25.6 20.45 13.76 29.56 19.68 20.45 25.6"/></svg>

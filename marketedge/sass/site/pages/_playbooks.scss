@@ -33,3 +33,58 @@ section.playbooks {
 		}
 	}
 }
+
+section.resources-groups {
+	.resource {
+		a.download-link {
+			text-decoration: none;
+			text-transform: initial;
+			font-weight: initial;
+			color: $black;
+			.download {
+				display: flex;
+				.download-icon {
+					min-width: 75px;
+					img,
+					svg {
+						width: 100%;
+						max-width: 75px;
+						fill: $color__brand-highlight;
+						rect,
+						polygon.a {
+							stroke: $color__brand-highlight;
+						}
+						path {
+							fill: $color__brand-highlight;
+						}
+					}
+				}
+				.download-content {
+					padding-left: 40px;
+					h2 {
+						color: $black;
+						line-height: 24px;
+						font-size: 22px;
+						font-weight: 700;
+						margin: 0;
+						text-transform: initial;
+					}
+					h3 {
+						margin: 0;
+						text-transform: uppercase;
+						font-size: 12px;
+						line-height: 1.5;
+						margin-bottom: 5px;
+						color: $color__brand-highlight;
+						font-weight: 700;
+					}
+					p {
+						font-size: 16px;
+						margin-top: 0;
+						padding-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
