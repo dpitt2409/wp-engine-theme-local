@@ -8,11 +8,6 @@
 					height: 100%;
 					display: flex;
 					transition: all 0.3s ease-in-out;
-					img {
-						object-fit: cover;
-						object-position: center;
-						height: 100%;
-					}
 					.resource-description {
 						padding: 10px 20px 10px 10px;
 						@include media-breakpoint-down(sm) {

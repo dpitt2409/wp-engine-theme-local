@@ -1,7 +1,7 @@
 <?php 
 // Resource Cards
 $featured = get_query_var('is_featured');
-$class = "col-md-6";
+$class = "col-lg-6";
 if($featured):
     $class = "col-md-12";
 endif;
