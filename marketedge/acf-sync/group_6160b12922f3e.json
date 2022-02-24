@@ -399,6 +399,102 @@
             "new_lines": ""
         },
         {
+            "key": "field_61fb04775b455",
+            "label": "Popup",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61fb049e5b457",
+            "label": "Enable",
+            "name": "popup_enable",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_61fb1a2f66991",
+            "label": "Expire Time",
+            "name": "popup_expire_time",
+            "type": "number",
+            "instructions": "How many hours to keep cookie?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 1000,
+            "step": ""
+        },
+        {
+            "key": "field_61fb1cbad97ee",
+            "label": "Popup Trigger Delay",
+            "name": "popup_trigger_delay",
+            "type": "number",
+            "instructions": "How many seconds after scrolling up to show popup?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": ""
+        },
+        {
+            "key": "field_61fb04875b456",
+            "label": "Content",
+            "name": "popup_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_61675b6b9cd89",
             "label": "GTM",
             "name": "",
@@ -451,5 +547,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1634163669
+    "show_in_rest": 0,
+    "modified": 1643847141
 }

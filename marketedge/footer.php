@@ -118,6 +118,29 @@ $footer_scripts = get_field('footer_scripts', 'option');
 if($footer_scripts):
     echo $footer_scripts;
 endif;
+
+$popup_enable = get_field('popup_enable', 'option');
+if($popup_enable):
+    $popup_expire_time = get_field('popup_expire_time', 'option');
+    $popup_trigger_delay = get_field('popup_trigger_delay', 'option');
+    $popup_content = get_field('popup_content', 'option');
+    ?>
+    <div class="scrollpop">
+        <?php
+        if(!$_COOKIE['marketedge_ps']):
+            ?>
+            <input type="hidden" id="pop_enable" value="true" />
+            <input type="hidden" id="pop_expires" value="<?php echo $popup_expire_time;?>" />
+            <input type="hidden" id="pop_delay" value="<?php echo $popup_trigger_delay;?>000" />
+            <?php
+        endif;
+        ?>
+        <div id="mag" class="mfp-hide">
+            <?php echo $popup_content;?>
+        </div>
+    </div>
+    <?php 
+endif; 
 ?>
 
 </body>
