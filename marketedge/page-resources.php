@@ -85,22 +85,6 @@ get_header();
                 <?php
             endif;
 
-            $form = get_field('form');
-            if( $form ): 
-                ?>
-                <section class="newsletter">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <?php echo $form;?>
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                </section>
-                <?php
-            endif;
-
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $posts_per_page = get_option( 'posts_per_page' );
             $args = array(
@@ -143,6 +127,23 @@ get_header();
                 <?php
                 wp_reset_postdata();
             endif;
+
+            $form = get_field('form');
+            if( $form ): 
+                ?>
+                <section class="newsletter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <?php echo $form;?>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </section>
+                <?php
+            endif;
+
 
 		endwhile; // End of the loop.
 		?>
