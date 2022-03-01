@@ -126,15 +126,8 @@ if($popup_enable):
     $popup_content = get_field('popup_content', 'option');
     ?>
     <div class="scrollpop">
-        <?php
-        if(!$_COOKIE['marketedge_ps']):
-            ?>
-            <input type="hidden" id="pop_enable" value="true" />
-            <input type="hidden" id="pop_expires" value="<?php echo $popup_expire_time;?>" />
-            <input type="hidden" id="pop_delay" value="<?php echo $popup_trigger_delay;?>000" />
-            <?php
-        endif;
-        ?>
+        <input type="hidden" id="pop_expires" value="<?php echo $popup_expire_time;?>" />
+        <input type="hidden" id="pop_delay" value="<?php echo $popup_trigger_delay;?>000" />
         <div id="mag" class="mfp-hide">
             <?php echo $popup_content;?>
         </div>

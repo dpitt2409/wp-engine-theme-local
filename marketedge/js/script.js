@@ -31,43 +31,58 @@ jQuery(document).ready(function ($) {
 		var expires = '; expires=' + date.toGMTString();
 		document.cookie = name + '=' + value + expires + '; path=/';
 	}
+	function getCookie(name) {
+		var cookieArr = document.cookie.split(';');
+		for (var i = 0; i < cookieArr.length; i++) {
+			var cookiePair = cookieArr[i].split('=');
+			if (name == cookiePair[0].trim()) {
+				return decodeURIComponent(cookiePair[1]);
+			}
+		}
+		return null;
+	}
 
 	// Check if we need to show popup
-	if ($('.scrollpop #pop_enable').length) {
+	if ($('.scrollpop').length) {
 		// Default scroll position
 		var pop_expires = $('.scrollpop #pop_expires').val(),
 			pop_delay = $('.scrollpop #pop_delay').val(),
 			CurrentScroll = 0,
 			triggered = false;
-		$(window).scroll(function () {
-			// Check if we already triggered
-			if (triggered === false) {
-				// Get current scroll
-				var NextScroll = $(this).scrollTop();
 
-				// If scroll less than previous we went up
-				if (NextScroll < CurrentScroll) {
-					triggered = true;
-					setTimeout(() => {
-						$.magnificPopup.open({
-							items: {
-								src: '#mag',
-							},
-							type: 'inline',
-							callbacks: {
-								close: function () {
-									// Set cookie
-									// name, value, hours
-									createCookie('marketedge_ps', 'true', pop_expires);
+		// Check if user has cookie
+		var marketedge_ps = getCookie('marketedge_ps');
+		if (marketedge_ps != 'true') {
+			$(window).scroll(function () {
+				// Check if we already triggered
+				if (triggered === false) {
+					// Get current scroll
+					var NextScroll = $(this).scrollTop();
+
+					// If scroll less than previous we went up
+					if (NextScroll < CurrentScroll) {
+						triggered = true;
+						setTimeout(() => {
+							$.magnificPopup.open({
+								items: {
+									src: '#mag',
 								},
-							},
-						});
-					}, pop_delay);
-				}
+								type: 'inline',
+								callbacks: {
+									close: function () {
+										// Set cookie
+										// name, value, hours
+										createCookie('marketedge_ps', 'true', pop_expires);
+									},
+								},
+							});
+						}, pop_delay);
+					}
 
-				//Update current scroll position
-				CurrentScroll = NextScroll;
-			}
-		});
+					//Update current scroll position
+					CurrentScroll = NextScroll;
+				}
+			});
+		}
 	}
 });
