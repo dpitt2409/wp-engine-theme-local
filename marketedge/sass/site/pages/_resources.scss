@@ -1,4 +1,18 @@
 .page-template-page-resources {
+	section.hero {
+		&::before {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #000000;
+			opacity: 0.5;
+		}
+	}
+
 	section.resources {
 		.resource {
 			margin-bottom: 30px;
@@ -20,6 +34,9 @@
 							text-transform: initial;
 							margin: 10px 0px;
 							letter-spacing: 0.26px;
+							text-decoration: underline;
+							text-decoration-color: #fff;
+							text-underline-offset: 1px;
 						}
 						h3 {
 							font-size: 18px;
@@ -42,9 +59,26 @@
 							letter-spacing: 0.18px;
 						}
 					}
-
+					.resource-image {
+						img {
+							object-fit: cover;
+							height: 100%;
+							object-position: center;
+						}
+					}
 					&:hover {
-						box-shadow: 0px 0px 5px 1px #dedede;
+						box-shadow: -8px 12px 30px -6px #ccc;
+					}
+				}
+			}
+			&:hover {
+				a {
+					.resource-content {
+						.resource-description {
+							h2 {
+								text-decoration-color: #000;
+							}
+						}
 					}
 				}
 			}
