@@ -50,7 +50,7 @@ endif;
 	<footer id="colophon">
         <div class="gradient-line"></div>
         <div class="site-footer row">
-            <div class="site-info site-branding col-md-6">
+            <div class="site-info site-branding col-md-5">
                 <a href="<?php echo home_url();?>" rel="home">
                     <?php 
                     $footer_logo = get_field('footer_logo','option');
@@ -58,16 +58,66 @@ endif;
                         <img src="<?php echo $footer_logo['url'];?>" alt="<?php echo get_bloginfo('name'); ?>" />
                     <?php endif; ?>
                 </a>
+                <?php
+                    if(have_rows('footer_social_menu', 'option')):
+                        ?>
+                        <ul class="social">
+                        <?php
+                        while(have_rows('footer_social_menu', 'option')): the_row();
+                            $footer_social_menu_link = get_sub_field('footer_social_menu_link');
+                            $footer_social_menu_link_class = get_sub_field('footer_social_menu_link_class');
+                            ?>
+                            <li>
+                                <a href="<?php echo $footer_social_menu_link['url'];?>" target="<?php echo $footer_social_menu_link['target'];?>">
+                                    <?php if($footer_social_menu_link_class):?>
+                                        <i class="<?php echo $footer_social_menu_link_class;?>"></i>
+                                    <?php else:?>
+                                        <?php echo $footer_social_menu_link['title'];?>
+                                    <?php endif;?>
+                                </a>
+                            </li>
+                            <?php
+                        endwhile;
+                        ?>
+                        </ul>
+                        <?php
+                    endif;
+                ?>
+                <div class="privacy">
+                    <p class="copyright">Copyright &copy; <?php echo date('Y');?> The Atlas</p>
+                    <?php
+                    if(have_rows('footer_privacy_menu', 'option')):
+                        ?>
+                        <ul class="privacy-links">
+                        <?php
+                        while(have_rows('footer_privacy_menu', 'option')): the_row();
+                            $privacy_link = get_sub_field('link');
+                            ?>
+                            <li><a href="<?php echo $privacy_link['url'];?>" target="<?php echo $privacy_link['target'];?>"><?php echo $privacy_link['title'];?></a></li>
+                            <?php
+                        endwhile;
+                        ?>
+                        </ul>
+                        <?php
+                    endif;
+                    ?>
+                </div>
             </div>
-            <div class="footer-links col-md-6">
+            <div class="footer-links col-md-7">
                 <?php
                 if(have_rows('footer_menus', 'option')):
                     ?>
                     <div class="row">
                     <?php
                     while(have_rows('footer_menus', 'option')): the_row();
+                        $group_label = get_sub_field('group_label');
                         ?>
-                        <div class="col-lg-3 col-md-4">
+                        <div class="col-lg-3 col-md-4 footer-group-menu">
+                            <?php
+                            if($group_label):
+                                ?><h3><?php echo $group_label;?></h3><?php
+                            endif;
+                            ?>
                             <ul>
                             <?php
                             if(have_rows('footer_menu_column', 'option')):
@@ -90,24 +140,6 @@ endif;
                 endif;
                 ?>
             </div>
-        </div>
-        <div class="privacy">
-            <?php
-            if(have_rows('footer_privacy_menu', 'option')):
-                ?>
-                <ul class="privacy-links">
-                <?php
-                while(have_rows('footer_privacy_menu', 'option')): the_row();
-                    $privacy_link = get_sub_field('link');
-                    ?>
-                    <li><a href="<?php echo $privacy_link['url'];?>" target="<?php echo $privacy_link['target'];?>"><?php echo $privacy_link['title'];?></a></li>
-                    <?php
-                endwhile;
-                ?>
-                </ul>
-                <?php
-            endif;
-            ?>
         </div>
 	</footer>
 </div>
