@@ -1,11 +1,11 @@
 {
-    "key": "group_62857d88a60d0",
-    "title": "[Block] - Two Up",
+    "key": "group_628598e67f6ba",
+    "title": "[Block] - CTA",
     "fields": [
         {
-            "key": "field_62857d9516592",
-            "label": "Image",
-            "name": "two_up_image",
+            "key": "field_62859930b8c0e",
+            "label": "Background Image",
+            "name": "background_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -27,10 +27,10 @@
             "mime_types": ""
         },
         {
-            "key": "field_6285a548dfafc",
-            "label": "Image Position",
-            "name": "two_up_image_position",
-            "type": "select",
+            "key": "field_6285993fb8c0f",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "color_picker",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -39,22 +39,14 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "left": "Left",
-                "right": "Right"
-            },
-            "default_value": "right",
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
         },
         {
-            "key": "field_62857da416593",
+            "key": "field_62859947b8c10",
             "label": "Heading",
-            "name": "two_up_heading",
+            "name": "heading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -71,9 +63,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_62857da816594",
+            "key": "field_6285994fb8c11",
             "label": "Content",
-            "name": "two_up_content",
+            "name": "content",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -87,12 +79,12 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": "br"
+            "new_lines": ""
         },
         {
-            "key": "field_62857db516595",
+            "key": "field_62859955b8c12",
             "label": "CTA",
-            "name": "two_up_cta",
+            "name": "cta",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -110,7 +102,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/marketedge-twoup"
+                "value": "acf\/marketedge-cta"
             }
         ]
     ],
@@ -123,5 +115,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652925896
+    "modified": 1652922715
 }

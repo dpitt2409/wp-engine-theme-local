@@ -20,15 +20,21 @@ jQuery(document).ready(function ($) {
 				{
 					breakpoint: 1200,
 					settings: {
+						centerPadding: '10%',
 						slidesToShow: 3,
-						slidesToScroll: 1,
-						centerMode: false,
-						adaptiveHeight: false,
-						variableWidth: false,
 					},
 				},
 				{
 					breakpoint: 800,
+					settings: {
+						infinite: true,
+						centerMode: true,
+						centerPadding: '15%',
+						slidesToShow: 2,
+					},
+				},
+				{
+					breakpoint: 700,
 					arrows: false,
 					settings: 'unslick',
 				},
@@ -49,15 +55,21 @@ jQuery(document).ready(function ($) {
 						{
 							breakpoint: 1200,
 							settings: {
+								centerPadding: '10%',
 								slidesToShow: 3,
-								slidesToScroll: 1,
-								centerMode: false,
-								adaptiveHeight: false,
-								variableWidth: false,
 							},
 						},
 						{
 							breakpoint: 800,
+							settings: {
+								infinite: true,
+								centerMode: true,
+								centerPadding: '15%',
+								slidesToShow: 2,
+							},
+						},
+						{
+							breakpoint: 700,
 							arrows: false,
 							settings: 'unslick',
 						},

@@ -51,6 +51,25 @@ function marketedge_gutenburg_acf_blocks() {
                 )
 		    )
         );
+		// register simplehero block
+		acf_register_block(
+            array(
+                'name'				=> 'marketedge-simplehero',
+                'title'				=> __('Simple Hero'),
+                'description'		=> __('Used on pages'),
+                'render_callback'	=> 'marketedge_render_acf_block',
+                'category'			=> 'marketedge',
+                'keywords'			=> array( 'Simple Hero' ),
+                'example'           => array(
+                    'attributes' => array(
+                        'mode' => 'preview',
+                        'data' => array(
+                            'preview_image' => get_template_directory_uri().'/template-parts/blocks/previews/block-simplehero-preview.jpg',
+                        ),
+                    )
+                )
+		    )
+        );
 		// register testimonial block
 		acf_register_block(
             array(
@@ -103,6 +122,25 @@ function marketedge_gutenburg_acf_blocks() {
                         'mode' => 'preview',
                         'data' => array(
                             'preview_image' => get_template_directory_uri().'/template-parts/blocks/previews/block-customers-preview.jpg',
+                        ),
+                    )
+                )
+		    )
+        );
+		// register cta block
+		acf_register_block(
+            array(
+                'name'				=> 'marketedge-cta',
+                'title'				=> __('CTA'),
+                'description'		=> __('CTA'),
+                'render_callback'	=> 'marketedge_render_acf_block',
+                'category'			=> 'marketedge',
+                'keywords'			=> array( 'CTA' ),
+                'example'           => array(
+                    'attributes' => array(
+                        'mode' => 'preview',
+                        'data' => array(
+                            'preview_image' => get_template_directory_uri().'/template-parts/blocks/previews/block-cta-preview.jpg',
                         ),
                     )
                 )

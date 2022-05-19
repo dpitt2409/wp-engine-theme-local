@@ -11,13 +11,14 @@ if( !empty($block['className']) ) {
 }
 
 $image = get_field('two_up_image');
+$image_position = get_field('two_up_image_position');
 $heading = get_field('two_up_heading');
 $content = get_field('two_up_content');
 $cta = get_field('two_up_cta');
 ?>
 <section id="<?php echo $id; ?>" class="<?php echo $classes;?>">  
     <div class="container">
-        <div class="twoup-bg">
+        <div class="twoup-bg <?php echo $image_position;?>">
             <div class="row">
                 <div class="col-md-6 twoup-image">
                     <?php if($image): ?>

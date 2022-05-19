@@ -10,15 +10,14 @@ h6 {
 	font-weight: 500;
 }
 h1 {
-	font-size: 62px;
-	line-height: 75px;
+	font-size: 40px;
+	line-height: normal;
 	margin: 0;
 	padding: 40px 0px;
 	font-weight: 700;
 	@include media-breakpoint-down(md) {
 		font-size: 36px;
 		padding: 0;
-		line-height: 40px;
 	}
 	strong {
 		font-weight: 700;
@@ -26,21 +25,15 @@ h1 {
 	}
 }
 h2 {
-	font-size: 52px;
-	line-height: 64px;
+	font-size: 32px;
+	line-height: nomal;
 	font-weight: 700;
 	@include media-breakpoint-down(md) {
-		font-size: 36px;
-		padding: 0;
-		line-height: 40px;
-	}
-	&.small {
-		font-size: 36px;
-		line-height: 44px;
+		font-size: 26px;
 	}
 }
 h3 {
-	font-size: 28px;
-	line-height: 29px;
+	font-size: 26px;
+	line-height: normal;
 	font-weight: 700;
 }
