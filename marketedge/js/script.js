@@ -8,6 +8,64 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
+	var customers_slider = $('.customers-slider');
+	if (customers_slider.length) {
+		customers_slider.slick({
+			infinite: true,
+			centerMode: true,
+			centerPadding: '10%',
+			slidesToShow: 4,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						centerMode: false,
+						adaptiveHeight: false,
+						variableWidth: false,
+					},
+				},
+				{
+					breakpoint: 800,
+					arrows: false,
+					settings: 'unslick',
+				},
+			],
+		});
+	}
+	$(window).on('resize orientationchange', function () {
+		var $customers_slider = $('.customers-slider');
+		if (customers_slider.length) {
+			if (!$customers_slider.hasClass('slick-initialized')) {
+				$customers_slider.slick({
+					infinite: true,
+					centerMode: true,
+					centerPadding: '10%',
+					slidesToShow: 4,
+					arrows: false,
+					responsive: [
+						{
+							breakpoint: 1200,
+							settings: {
+								slidesToShow: 3,
+								slidesToScroll: 1,
+								centerMode: false,
+								adaptiveHeight: false,
+								variableWidth: false,
+							},
+						},
+						{
+							breakpoint: 800,
+							arrows: false,
+							settings: 'unslick',
+						},
+					],
+				});
+			}
+		}
+	});
 	// Add smooth scrolling to all links
 	$('a').on('click', function (event) {
 		// Make sure this.hash has a value before overriding default behavior

@@ -1,0 +1,63 @@
+section.twoup {
+	.container {
+		max-width: 1100px;
+		margin: auto;
+		.twoup-bg {
+			border-radius: 4px;
+			padding: 20px;
+			background-color: $ice-grey-light;
+			@include media-breakpoint-up(xl) {
+				padding: 60px 0px;
+			}
+		}
+	}
+	img {
+		margin: auto;
+		position: relative;
+		box-shadow: 0px 5px 15px 0px #dedeed;
+		border-radius: 10px;
+		@include media-breakpoint-up(xl) {
+			left: -41px;
+			max-width: 461px;
+		}
+	}
+	h2 {
+		font-size: 26px;
+		font-weight: 700;
+		color: $night-blue;
+		margin-top: 0px;
+	}
+	p {
+		margin: 19px 0 30px;
+		font-size: 18px;
+		color: $slate-medium;
+	}
+	&:nth-child(even) {
+		.container {
+			.twoup-bg {
+				background-color: #f3fafe;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.home {
+		section.twoup {
+			.twoup-bg {
+				position: relative;
+				&::after {
+					content: '';
+					display: block;
+					background: url(images/line-graphic@2x.png);
+					background-size: contain;
+					background-repeat: no-repeat;
+					width: 377px;
+					height: 107px;
+					position: absolute;
+					right: 60px;
+					bottom: -33px;
+				}
+			}
+		}
+	}
+}

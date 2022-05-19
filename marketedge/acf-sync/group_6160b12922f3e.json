@@ -268,6 +268,97 @@
             ]
         },
         {
+            "key": "field_6160c69747a0d",
+            "label": "Footer Privacy Menu",
+            "name": "footer_privacy_menu",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_6160c6b447a0e",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_628435c2d4be3",
+            "label": "Footer Social Menu",
+            "name": "footer_social_menu",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_628435c2d4be4",
+                    "label": "Link",
+                    "name": "footer_social_menu_link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_628435d7d4be5",
+                    "label": "Link Class",
+                    "name": "footer_social_menu_link_class",
+                    "type": "text",
+                    "instructions": "Mostly for Social Link icons will show icon before link text. e.g. fab fa-facebook-square",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
             "key": "field_6160c476b1861",
             "label": "Footer Menus",
             "name": "footer_menus",
@@ -283,9 +374,28 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
+            "layout": "block",
             "button_label": "Add Column",
             "sub_fields": [
+                {
+                    "key": "field_62842fca64367",
+                    "label": "Group Label",
+                    "name": "group_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
                 {
                     "key": "field_6160c486b1862",
                     "label": "Footer Menu Column",
@@ -340,42 +450,6 @@
                             "maxlength": ""
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "key": "field_6160c69747a0d",
-            "label": "Footer Privacy Menu",
-            "name": "footer_privacy_menu",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "table",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_6160c6b447a0e",
-                    "label": "Link",
-                    "name": "link",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array"
                 }
             ]
         },
@@ -548,5 +622,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643847141
+    "modified": 1652831761
 }

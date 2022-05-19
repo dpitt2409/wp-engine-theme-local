@@ -1,0 +1,30 @@
+section.testimonial {
+	.container {
+		max-width: 1180px;
+		margin: auto;
+		.row {
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.testimonial-image {
+		text-align: center;
+		img {
+			max-width: 265px;
+		}
+	}
+
+	h2 {
+		font-size: 26px;
+		line-height: 1.46;
+		color: $night-blue;
+		margin: 0px;
+		font-weight: 400;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1;
+		color: $night-blue;
+	}
+}

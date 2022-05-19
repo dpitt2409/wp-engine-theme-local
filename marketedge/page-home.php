@@ -12,6 +12,13 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
+            if(get_the_content()):
+                the_content();
+            endif;
+
+
+
+
             $hero_background = get_field('hero_background');
             $hero_heading = get_field('hero_heading');
             $hero_content = get_field('hero_content');
@@ -144,18 +151,6 @@ get_header();
                             endwhile;
                             ?>
                         </div>
-                    </div>
-                </section>
-                <?php
-            endif;
-
-            if(get_the_content()):
-                ?>
-                <section class="entry-content">
-                    <div class="container">
-                        <?php
-                        the_content();
-                        ?>
                     </div>
                 </section>
                 <?php

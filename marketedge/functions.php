@@ -100,11 +100,16 @@ function marketedge_scripts() {
 	wp_enqueue_style( 'magnific', get_stylesheet_directory_uri() .'/css/magnific-popup.css', array(), '1.1.0' );
 	wp_enqueue_script( 'magnific-scripts', get_stylesheet_directory_uri() . '/js/jquery.magnific-popup.min.js', array('jquery'), '1.1.0', true );
     
-    wp_enqueue_script( 'marketedge-script', get_template_directory_uri() . '/js/script.js', array('jquery'), _S_VERSION, true );
-	wp_enqueue_script( 'marketedge-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+    //Slick Slider
+	wp_enqueue_style( 'slick', get_stylesheet_directory_uri() .'/css/slick.css' );
+	wp_enqueue_style( 'slick-theme', get_stylesheet_directory_uri() .'/css/slick-theme.css' );
+	wp_enqueue_script( 'slick-scripts', get_stylesheet_directory_uri() . '/js/slick.min.js', array('jquery'), '1.0.0', TRUE );
+
+    wp_enqueue_script( 'marketedge-script', get_stylesheet_directory_uri() . '/js/script.js', array('jquery'), _S_VERSION, true );
+	wp_enqueue_script( 'marketedge-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	// Ajax Script
-	wp_register_script( 'marketedge-loadmore', get_template_directory_uri() . '/js/marketedge-resources.js', array('jquery'), _S_VERSION, true );
+	wp_register_script( 'marketedge-loadmore', get_stylesheet_directory_uri() . '/js/marketedge-resources.js', array('jquery'), _S_VERSION, true );
 	wp_localize_script( 'marketedge-loadmore', 'marketedge_loadmore_params', array(
 		'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
 		'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1
@@ -144,27 +149,22 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 include('inc/post_types/resources.php');
 
-// ACF Options, Configs
-if (function_exists('acf_add_options_page')) {
-
-	$event_settings_page = acf_add_options_page(array(
-		'page_title'    => __('Theme Settings'),
-		'menu_title'    => __('Theme Settings'),
-		'menu_slug'     => 'theme-general-settings'
-	));
-}
+/**
+ * Include ACF Options
+ */
+include('inc/acf-options.php');
 /* 
 * ACF Local JSON
 */
-add_filter('acf/settings/save_json', 'eventual_acf_json_save_point');
-function eventual_acf_json_save_point( $path ) {
+add_filter('acf/settings/save_json', 'marketedge_acf_json_save_point');
+function marketedge_acf_json_save_point( $path ) {
     // update path
     $path = dirname(__FILE__) . '/acf-sync';
     // return
     return $path;
 }
-add_filter('acf/settings/load_json', 'eventual_acf_json_load_point');
-function eventual_acf_json_load_point( $paths ) {
+add_filter('acf/settings/load_json', 'marketedge_acf_json_load_point');
+function marketedge_acf_json_load_point( $paths ) {
     // append path
     $paths[] = dirname(__FILE__) . '/acf-sync';
     // return
