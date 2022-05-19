@@ -2033,25 +2033,36 @@ footer .site-branding a img {
   margin: 0;
   padding-left: 0;
 }
-.main-navigation ul ul {
+.main-navigation ul ul.sub-menu {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
   top: 100%;
-  left: -999em;
-  z-index: 99999;
+  z-index: 99;
+  background: white;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all 0.5s;
 }
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
+.main-navigation ul ul.sub-menu li {
+  width: auto;
+  text-align: left;
+  white-space: nowrap;
+  margin: 0px;
+  width: 100%;
 }
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-  display: block;
-  left: auto;
+.main-navigation ul ul.sub-menu li a {
+  padding: 10px 15px;
+}
+.main-navigation ul ul.sub-menu li:hover {
+  background: #f9fafb;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-  left: auto;
+  opacity: 1;
 }
 .main-navigation a {
   display: block;
@@ -2060,6 +2071,7 @@ footer .site-branding a img {
   font-size: 14px;
   color: #060709;
   font-weight: 400;
+  padding: 10px 0px;
 }
 .main-navigation a:hover {
   color: #e39600;
@@ -9452,6 +9464,7 @@ section.hero.simple-hero .simple-hero-bg {
   padding: 120px 40px;
   max-width: 1200px;
   margin: auto;
+  border-radius: 6px;
 }
 section.hero.simple-hero .simple-hero-bg .hero-shape {
   border-top: 4px solid #e39600;

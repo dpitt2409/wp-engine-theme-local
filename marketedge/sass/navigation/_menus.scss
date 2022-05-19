@@ -53,31 +53,37 @@ footer {
 		margin: 0;
 		padding-left: 0;
 
-		ul {
+		ul.sub-menu {
+			display: flex;
+			justify-content: space-evenly;
+			flex-direction: column;
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
 			top: 100%;
-			left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
+			z-index: 99;
+			background: white;
+			border-radius: 3px;
+			opacity: 0;
+			transition: all 0.5s;
 			li {
-				&:hover > ul,
-				&.focus > ul {
-					display: block;
-					left: auto;
+				width: auto;
+				text-align: left;
+				white-space: nowrap;
+				margin: 0px;
+				width: 100%;
+				a {
+					padding: 10px 15px;
+				}
+				&:hover {
+					background: $ice-grey-light;
 				}
 			}
 		}
 
 		li:hover > ul,
 		li.focus > ul {
-			left: auto;
+			opacity: 1;
 		}
 	}
 
@@ -88,6 +94,7 @@ footer {
 		font-size: 14px;
 		color: #060709;
 		font-weight: 400;
+		padding: 10px 0px;
 		&:hover {
 			color: $color__brand-highlight;
 		}
