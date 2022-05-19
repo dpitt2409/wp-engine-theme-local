@@ -8428,7 +8428,7 @@ footer:first-child {
 }
 section .container,
 footer .container {
-  max-width: 1600px;
+  max-width: 1270px;
   margin: auto;
 }
 
@@ -9078,6 +9078,10 @@ section.team-members .team-member p {
 }
 .page-template-page-resources section.resources .resource a {
   text-decoration: none;
+  background: #f5f7f9;
+  display: block;
+  padding: 30px;
+  border-radius: 9.6px;
 }
 .page-template-page-resources section.resources .resource a .resource-content {
   height: 100%;
@@ -9085,7 +9089,7 @@ section.team-members .team-member p {
   transition: all 0.3s ease-in-out;
 }
 .page-template-page-resources section.resources .resource a .resource-content .resource-description {
-  padding: 10px 20px 10px 10px;
+  padding: 0px 20px;
 }
 @media (max-width: 767.98px) {
   .page-template-page-resources section.resources .resource a .resource-content .resource-description {
@@ -9093,73 +9097,98 @@ section.team-members .team-member p {
   }
 }
 .page-template-page-resources section.resources .resource a .resource-content .resource-description h2 {
-  font-size: 26px;
-  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16.9px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
   color: #060709;
   text-transform: initial;
-  margin: 10px 0px;
-  letter-spacing: 0.26px;
-  text-decoration: underline;
-  text-decoration-color: #fff;
-  text-underline-offset: 1px;
+  margin: 8px 0px;
 }
 .page-template-page-resources section.resources .resource a .resource-content .resource-description h3 {
-  font-size: 18px;
-  line-height: 20px;
-  color: #e39600;
-  text-transform: uppercase;
-  letter-spacing: 0.18px;
-  margin: 0px;
-}
-@media (max-width: 767.98px) {
-  .page-template-page-resources section.resources .resource a .resource-content .resource-description h3 {
-    margin-top: 20px;
-  }
+  font-family: "Roboto", sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #515c6c;
+  margin: 0;
 }
 .page-template-page-resources section.resources .resource a .resource-content .resource-description p {
-  font-size: 18px;
-  line-height: 24px;
-  color: #060709;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  color: #000;
   text-transform: initial;
-  margin-bottom: 0px;
-  font-weight: 400;
-  letter-spacing: 0.18px;
+  margin-top: 12px;
+}
+.page-template-page-resources section.resources .resource a .resource-content .resource-description .time-to-read {
+  font-size: 12.1px;
+  text-transform: uppercase;
+  color: #979797;
+  margin: 0px;
+}
+.page-template-page-resources section.resources .resource a .resource-content .resource-description .time-to-read svg {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
 }
 .page-template-page-resources section.resources .resource a .resource-content .resource-image img {
   object-fit: cover;
   height: 100%;
   object-position: center;
+  border-radius: 6px;
 }
-.page-template-page-resources section.resources .resource a .resource-content:hover {
+.page-template-page-resources section.resources .resource a:hover {
   box-shadow: -8px 12px 30px -6px #ccc;
 }
 .page-template-page-resources section.resources .resource:hover a .resource-content .resource-description h2 {
   text-decoration-color: #000;
 }
 .page-template-page-resources section.resources.featured {
-  background: #2d6079;
+  padding-bottom: 0px;
 }
-.page-template-page-resources section.resources.featured a .resource-content {
+.page-template-page-resources section.resources.featured .resource {
+  margin-bottom: 0px;
+}
+.page-template-page-resources section.resources.featured .resource a {
+  padding: 50px;
+}
+.page-template-page-resources section.resources.featured .resource a .resource-content {
   background: transparent;
 }
-.page-template-page-resources section.resources.featured a .resource-content .row {
+.page-template-page-resources section.resources.featured .resource a .resource-content .row {
   align-items: center;
 }
-.page-template-page-resources section.resources.featured a .resource-content .row .resource-description h2,
-.page-template-page-resources section.resources.featured a .resource-content .row .resource-description p {
-  color: #fff;
+.page-template-page-resources section.resources.featured .resource a .resource-content .row .resource-description h2 {
+  font-size: 27.1px;
+  margin: 13px 0px 16px;
 }
-.page-template-page-resources section.resources.featured a .resource-content .row .resource-description .btn {
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  padding: 15px 30px;
-  color: #000;
-  font-weight: 600;
+.page-template-page-resources section.resources.featured .resource a .resource-content .row .resource-description h3 {
+  font-size: 23.2px;
+}
+.page-template-page-resources section.resources.featured .resource a .resource-content .row .resource-description p {
+  font-size: 22.5px;
   margin-top: 20px;
-  letter-spacing: 0.18px;
+  margin-bottom: 0px;
 }
-.page-template-page-resources section.resources.featured a .resource-content:hover {
+.page-template-page-resources section.resources.featured .resource a .resource-content .row .resource-description .time-to-read {
+  font-size: 19.4px;
+  margin: 0px;
+}
+.page-template-page-resources section.resources.featured .resource a .resource-content .row .resource-description .time-to-read svg {
+  top: 5px;
+}
+.page-template-page-resources section.resources.featured .resource a .resource-content:hover {
   box-shadow: none;
 }
 .page-template-page-resources section.resources a.btn.load-more {
@@ -9168,6 +9197,7 @@ section.team-members .team-member p {
   line-height: 22px;
   text-transform: uppercase;
   padding: 15px 30px;
+  cursor: pointer;
 }
 .page-template-page-resources section.newsletter hr {
   margin-top: 40px;
@@ -9462,7 +9492,6 @@ section.hero.simple-hero .simple-hero-bg {
   align-items: center;
   position: relative;
   padding: 120px 40px;
-  max-width: 1200px;
   margin: auto;
   border-radius: 6px;
 }

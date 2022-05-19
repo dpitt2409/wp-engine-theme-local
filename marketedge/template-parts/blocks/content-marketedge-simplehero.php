@@ -17,8 +17,8 @@ $content = get_field('content');
 $cta = get_field('cta');
 ?>
 <section id="<?php echo $id; ?>" class="<?php echo $classes;?>">  
-    <div class="simple-hero-bg" style="background-color: <?php echo $background_color;?>;background-image:url(<?php echo $background_image['url'];?>);background-size:cover;background-repeat:no-repeat;background-position: center;">
-        <div class="container">
+    <div class="container">
+        <div class="simple-hero-bg" style="background-color: <?php echo $background_color;?>;background-image:url(<?php echo $background_image['url'];?>);background-size:cover;background-repeat:no-repeat;background-position: center;">
             <div class="row">
                 <div class="col-12">
                     <?php if($heading): ?>

@@ -3,6 +3,25 @@
     "title": "Resources",
     "fields": [
         {
+            "key": "field_62868759f5917",
+            "label": "Time To Read",
+            "name": "time_to_read",
+            "type": "text",
+            "instructions": "e.g. 5 Minutes",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_61fad125f8595",
             "label": "Short Description",
             "name": "short_description",
@@ -163,5 +182,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644870390
+    "modified": 1652983667
 }

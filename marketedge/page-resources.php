@@ -13,7 +13,12 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-            $hero_background = get_field('hero_background');
+            if(get_the_content()):
+                the_content();
+            endif;
+
+            /* TODO: Clean up old sections */
+            /* $hero_background = get_field('hero_background');
             $hero_heading = get_field('hero_heading');
             $hero_content = get_field('hero_content');
             $hero_cta = get_field('hero_cta');
@@ -37,7 +42,7 @@ get_header();
                     </div>
                 </section>
                 <?php
-            endif;
+            endif; */
 
             $args = array(
                 'post_type'   => 'resources',
@@ -71,18 +76,6 @@ get_header();
                 </section>
                 <?php
                 wp_reset_postdata();
-            endif;
-
-            if(get_the_content()):
-                ?>
-                <section class="entry-content">
-                    <div class="container">
-                        <?php
-                        the_content();
-                        ?>
-                    </div>
-                </section>
-                <?php
             endif;
 
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -128,7 +121,7 @@ get_header();
                 wp_reset_postdata();
             endif;
 
-            $form = get_field('form');
+            /* $form = get_field('form');
             if( $form ): 
                 ?>
                 <section class="newsletter">
@@ -142,7 +135,7 @@ get_header();
                     </div>
                 </section>
                 <?php
-            endif;
+            endif; */
 
 
 		endwhile; // End of the loop.
