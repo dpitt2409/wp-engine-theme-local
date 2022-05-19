@@ -2104,7 +2104,7 @@ footer .site-branding a img {
   position: absolute;
   left: 0;
   display: block;
-  background: #fff;
+  background: #132c37;
   width: 100%;
   height: 2px;
 }
@@ -2120,7 +2120,7 @@ footer .site-branding a img {
   transform: translateY(6px) translateX(0) rotate(-45deg);
   opacity: 1;
   width: 100%;
-  background: #fff;
+  background: #132c37;
 }
 .main-navigation.toggled .menu-toggle span:nth-child(2) {
   opacity: 0;
@@ -2130,7 +2130,7 @@ footer .site-branding a img {
   transform: translateY(-10px) translateX(0) rotate(45deg);
   opacity: 1;
   width: 100%;
-  background: #fff;
+  background: #132c37;
 }
 
 main#primary {
@@ -9438,15 +9438,22 @@ section.hero.large-hero img.overlay-image {
   }
 }
 section.hero.simple-hero {
+  background: linear-gradient(to bottom, #f9fafb 80%, transparent 0%);
+}
+@media (min-width: 992px) {
+  section.hero.simple-hero {
+    padding-top: 40px;
+  }
+}
+section.hero.simple-hero .simple-hero-bg {
   display: flex;
   align-items: center;
   position: relative;
   padding: 120px 40px;
-}
-section.hero.simple-hero .container {
   max-width: 1200px;
+  margin: auto;
 }
-section.hero.simple-hero .hero-shape {
+section.hero.simple-hero .simple-hero-bg .hero-shape {
   border-top: 4px solid #e39600;
   height: 39px;
   width: 220px;
@@ -9455,28 +9462,28 @@ section.hero.simple-hero .hero-shape {
   left: -10px;
   top: -15px;
 }
-section.hero.simple-hero h1 {
+section.hero.simple-hero .simple-hero-bg h1 {
   margin: 0px;
   padding: 0px;
   color: #fff;
 }
 @media (max-width: 991.98px) {
-  section.hero.simple-hero h1 {
+  section.hero.simple-hero .simple-hero-bg h1 {
     font-size: 36px;
     line-height: 40px;
   }
 }
-section.hero.simple-hero p {
+section.hero.simple-hero .simple-hero-bg p {
   color: #afb8bc;
   font-size: 20px;
   padding: 25px 0px;
   margin: 0;
 }
-section.hero.simple-hero img.overlay-image {
+section.hero.simple-hero .simple-hero-bg img.overlay-image {
   display: none;
 }
 @media (min-width: 992px) {
-  section.hero.simple-hero img.overlay-image {
+  section.hero.simple-hero .simple-hero-bg img.overlay-image {
     display: block;
     position: absolute;
     right: 0;
