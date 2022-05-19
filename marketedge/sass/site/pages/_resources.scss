@@ -1,22 +1,25 @@
 .page-template-page-resources {
 	section.resources {
+		&.archive {
+			padding-top: 30px;
+		}
 		.resource {
 			margin-bottom: 30px;
 			a {
+				height: 100%;
 				text-decoration: none;
 				background: #f5f7f9;
 				display: block;
-				padding: 30px;
+				padding: 20px;
 				border-radius: 9.6px;
+				@include media-breakpoint-up(lg) {
+					padding: 30px;
+				}
 				.resource-content {
 					height: 100%;
 					display: flex;
 					transition: all 0.3s ease-in-out;
 					.resource-description {
-						padding: 0px 20px;
-						@include media-breakpoint-down(sm) {
-							padding: 20px;
-						}
 						h2 {
 							font-family: $font__roboto;
 							font-size: 16.9px;
@@ -94,7 +97,10 @@
 			.resource {
 				margin-bottom: 0px;
 				a {
-					padding: 50px;
+					padding: 20px;
+					@include media-breakpoint-up(lg) {
+						padding: 50px;
+					}
 					.resource-content {
 						background: transparent;
 						.row {

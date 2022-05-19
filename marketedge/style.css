@@ -9073,28 +9073,29 @@ section.team-members .team-member p {
   margin-top: 10px;
 }
 
+.page-template-page-resources section.resources.archive {
+  padding-top: 30px;
+}
 .page-template-page-resources section.resources .resource {
   margin-bottom: 30px;
 }
 .page-template-page-resources section.resources .resource a {
+  height: 100%;
   text-decoration: none;
   background: #f5f7f9;
   display: block;
-  padding: 30px;
+  padding: 20px;
   border-radius: 9.6px;
+}
+@media (min-width: 992px) {
+  .page-template-page-resources section.resources .resource a {
+    padding: 30px;
+  }
 }
 .page-template-page-resources section.resources .resource a .resource-content {
   height: 100%;
   display: flex;
   transition: all 0.3s ease-in-out;
-}
-.page-template-page-resources section.resources .resource a .resource-content .resource-description {
-  padding: 0px 20px;
-}
-@media (max-width: 767.98px) {
-  .page-template-page-resources section.resources .resource a .resource-content .resource-description {
-    padding: 20px;
-  }
 }
 .page-template-page-resources section.resources .resource a .resource-content .resource-description h2 {
   font-family: "Roboto", sans-serif;
@@ -9161,7 +9162,12 @@ section.team-members .team-member p {
   margin-bottom: 0px;
 }
 .page-template-page-resources section.resources.featured .resource a {
-  padding: 50px;
+  padding: 20px;
+}
+@media (min-width: 992px) {
+  .page-template-page-resources section.resources.featured .resource a {
+    padding: 50px;
+  }
 }
 .page-template-page-resources section.resources.featured .resource a .resource-content {
   background: transparent;
@@ -9491,9 +9497,20 @@ section.hero.simple-hero .simple-hero-bg {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 120px 40px;
+  padding: 120px 85px;
   margin: auto;
   border-radius: 6px;
+}
+section.hero.simple-hero .simple-hero-bg.has-overlay {
+  margin-top: 40px;
+}
+section.hero.simple-hero .simple-hero-bg .row {
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  section.hero.simple-hero .simple-hero-bg {
+    padding: 120px 40px;
+  }
 }
 section.hero.simple-hero .simple-hero-bg .hero-shape {
   border-top: 4px solid #e39600;
@@ -9527,11 +9544,17 @@ section.hero.simple-hero .simple-hero-bg img.overlay-image {
 @media (min-width: 992px) {
   section.hero.simple-hero .simple-hero-bg img.overlay-image {
     display: block;
-    position: absolute;
     right: 0;
-    bottom: -162px;
-    max-width: 800px;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
+}
+section.hero.simple-hero .simple-hero-bg.light h1,
+section.hero.simple-hero .simple-hero-bg.light p {
+  color: #132c37;
 }
 
 section.testimonial .container {

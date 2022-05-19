@@ -3,6 +3,31 @@
     "title": "[Block] - Simple Hero",
     "fields": [
         {
+            "key": "field_6286a60511c1c",
+            "label": "Background Style",
+            "name": "background_style",
+            "type": "select",
+            "instructions": "Controls text color, if light text will be dark.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "default_value": "dark",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_6285a3497851d",
             "label": "Background Color",
             "name": "background_color",
@@ -25,6 +50,30 @@
             "name": "background_image",
             "type": "image",
             "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6286a626bb671",
+            "label": "Overlay Image",
+            "name": "overlay_image",
+            "type": "image",
+            "instructions": "(optional)",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -115,5 +164,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652925271
+    "modified": 1652991581
 }
