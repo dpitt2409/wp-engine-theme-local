@@ -1,0 +1,59 @@
+section.contentform {
+	padding: 100px 0px;
+	.row {
+		align-items: center;
+	}
+	.content {
+		@include media-breakpoint-up(lg) {
+			padding-right: 120px;
+		}
+		h2 {
+			font-size: 40px;
+			font-weight: 300;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $night-blue;
+		}
+		p {
+			font-size: 18px;
+			font-weight: 300;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #50505d;
+		}
+		ul {
+			margin: 0px;
+			padding: 10px 20px;
+			list-style: none;
+			li {
+				font-size: 18px;
+				font-weight: 500;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.44;
+				letter-spacing: normal;
+				color: #50505d;
+				&::before {
+					content: '\2022';
+					color: $color__brand-highlight;
+					font-weight: bold;
+					display: inline-block;
+					width: 1em;
+					margin-left: -1em;
+				}
+			}
+		}
+	}
+	.embed-form {
+		background: $night-blue;
+		padding: 60px;
+		border-radius: 6px;
+		@include media-breakpoint-up(lg) {
+			padding: 60px 100px;
+		}
+	}
+}

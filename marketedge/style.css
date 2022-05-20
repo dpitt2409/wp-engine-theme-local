@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: MarketEdge By The Atlas
 Theme URI: 
@@ -9801,6 +9802,68 @@ section.narrowtextblock .container {
 }
 section.narrowtextblock .container p {
   font-size: 16px;
+}
+
+section.contentform {
+  padding: 100px 0px;
+}
+section.contentform .row {
+  align-items: center;
+}
+@media (min-width: 992px) {
+  section.contentform .content {
+    padding-right: 120px;
+  }
+}
+section.contentform .content h2 {
+  font-size: 40px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #132c37;
+}
+section.contentform .content p {
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #50505d;
+}
+section.contentform .content ul {
+  margin: 0px;
+  padding: 10px 20px;
+  list-style: none;
+}
+section.contentform .content ul li {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #50505d;
+}
+section.contentform .content ul li::before {
+  content: "•";
+  color: #e39600;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+section.contentform .embed-form {
+  background: #132c37;
+  padding: 60px;
+  border-radius: 6px;
+}
+@media (min-width: 992px) {
+  section.contentform .embed-form {
+    padding: 60px 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

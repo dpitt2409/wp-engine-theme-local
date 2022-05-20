@@ -203,6 +203,25 @@ function marketedge_gutenburg_acf_blocks() {
                 )
 		    )
         );
+		// register contentform block
+		acf_register_block(
+            array(
+                'name'				=> 'marketedge-contentform',
+                'title'				=> __('Content with Form'),
+                'description'		=> __('Content with Form'),
+                'render_callback'	=> 'marketedge_render_acf_block',
+                'category'			=> 'marketedge',
+                'keywords'			=> array( 'Content with Form' ),
+                'example'           => array(
+                    'attributes' => array(
+                        'mode' => 'preview',
+                        'data' => array(
+                            'preview_image' => get_template_directory_uri().'/template-parts/blocks/previews/block-contentform-preview.jpg',
+                        ),
+                    )
+                )
+		    )
+        );
     }
 }
 
