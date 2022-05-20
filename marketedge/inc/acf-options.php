@@ -146,6 +146,63 @@ function marketedge_gutenburg_acf_blocks() {
                 )
 		    )
         );
+		// register blueprint block
+		acf_register_block(
+            array(
+                'name'				=> 'marketedge-blueprint',
+                'title'				=> __('Blueprint 3 Up'),
+                'description'		=> __('Blueprint 3 Up'),
+                'render_callback'	=> 'marketedge_render_acf_block',
+                'category'			=> 'marketedge',
+                'keywords'			=> array( 'Blueprint 3 Up' ),
+                'example'           => array(
+                    'attributes' => array(
+                        'mode' => 'preview',
+                        'data' => array(
+                            'preview_image' => get_template_directory_uri().'/template-parts/blocks/previews/block-blueprint-preview.jpg',
+                        ),
+                    )
+                )
+		    )
+        );
+		// register team block
+		acf_register_block(
+            array(
+                'name'				=> 'marketedge-team',
+                'title'				=> __('Team'),
+                'description'		=> __('Team'),
+                'render_callback'	=> 'marketedge_render_acf_block',
+                'category'			=> 'marketedge',
+                'keywords'			=> array( 'Team' ),
+                'example'           => array(
+                    'attributes' => array(
+                        'mode' => 'preview',
+                        'data' => array(
+                            'preview_image' => get_template_directory_uri().'/template-parts/blocks/previews/block-team-preview.jpg',
+                        ),
+                    )
+                )
+		    )
+        );
+		// register narrowtextblock block
+		acf_register_block(
+            array(
+                'name'				=> 'marketedge-narrowtextblock',
+                'title'				=> __('Narrow Text Block'),
+                'description'		=> __('Narrow Text Block'),
+                'render_callback'	=> 'marketedge_render_acf_block',
+                'category'			=> 'marketedge',
+                'keywords'			=> array( 'Narrow Text Block' ),
+                'example'           => array(
+                    'attributes' => array(
+                        'mode' => 'preview',
+                        'data' => array(
+                            'preview_image' => get_template_directory_uri().'/template-parts/blocks/previews/block-narrowtextblock-preview.jpg',
+                        ),
+                    )
+                )
+		    )
+        );
     }
 }
 

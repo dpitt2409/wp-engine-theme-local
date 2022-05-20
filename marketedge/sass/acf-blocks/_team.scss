@@ -1,0 +1,39 @@
+section.team {
+	.container {
+		max-width: 1140px;
+		margin: auto;
+	}
+	h2 {
+		font-size: 40px;
+		font-weight: 700;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: 2.11px;
+		color: $night-blue;
+	}
+	.team-item {
+		margin-top: 60px;
+		h2 {
+			font-size: 26px;
+			font-weight: 700;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $night-blue;
+		}
+		p {
+			font-size: 18px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $slate-medium;
+		}
+		img {
+			border-radius: 6px;
+		}
+	}
+}

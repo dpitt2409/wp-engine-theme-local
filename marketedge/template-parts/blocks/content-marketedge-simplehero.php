@@ -15,8 +15,10 @@ $background_color = get_field('background_color');
 $overlay_image = get_field('overlay_image');
 
 $has_overlay = '';
+$column_class = 'col-12';
 if($overlay_image):
     $has_overlay = ' has-overlay';
+    $column_class = 'col-md-6';
 endif;
 
 
@@ -28,7 +30,7 @@ $cta = get_field('cta');
     <div class="container">
         <div class="simple-hero-bg <?php echo $background_style; echo $has_overlay;?>" style="background-color: <?php echo $background_color;?>;background-image:url(<?php echo $background_image['url'];?>);background-size:cover;background-repeat:no-repeat;background-position: center;">
             <div class="row">
-                <div class="col-6">
+                <div class="<?php echo $column_class;?>">
                     <?php if($heading): ?>
                         <div class="hero-shape"></div>
                         <h1><?php echo $heading;?></h1>
@@ -40,11 +42,11 @@ $cta = get_field('cta');
                         <a class="btn btn-primary" href="<?php echo $cta['url'];?>" target="<?php echo $cta['target'];?>"><?php echo $cta['title'];?></a>
                     <?php endif; ?>
                 </div>
-                <div class="col-6">
-                    <?php if($overlay_image): ?>
+                <?php if($overlay_image): ?>
+                    <div class="<?php echo $column_class;?>">
                         <img class="overlay-image" src="<?php echo $overlay_image['url'];?>" />
-                    <?php endif; ?>
-                </div>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

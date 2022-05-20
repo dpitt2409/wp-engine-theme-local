@@ -1775,7 +1775,7 @@ h5,
 h6 {
   font-family: "Fira Sans", sans-serif;
   clear: both;
-  color: #000;
+  color: #132c37;
   font-weight: 500;
 }
 
@@ -9503,6 +9503,7 @@ section.hero.simple-hero .simple-hero-bg {
 }
 section.hero.simple-hero .simple-hero-bg.has-overlay {
   margin-top: 40px;
+  margin-bottom: 150px;
 }
 section.hero.simple-hero .simple-hero-bg .row {
   width: 100%;
@@ -9536,6 +9537,7 @@ section.hero.simple-hero .simple-hero-bg p {
   color: #afb8bc;
   font-size: 20px;
   padding: 25px 0px;
+  max-width: 500px;
   margin: 0;
 }
 section.hero.simple-hero .simple-hero-bg img.overlay-image {
@@ -9586,7 +9588,7 @@ section.testimonial p {
 }
 
 section.twoup .container {
-  max-width: 1100px;
+  max-width: 1160px;
   margin: auto;
 }
 section.twoup .container .twoup-bg {
@@ -9690,7 +9692,7 @@ section.customers .customers-slider .customer img {
 }
 
 section.cta .container {
-  max-width: 1100px;
+  max-width: 1060px;
   margin: auto;
 }
 section.cta .container .cta-bg {
@@ -9727,6 +9729,78 @@ section.cta .container .cta-bg .cta-content .btn {
 section.cta .container .cta-bg .cta-content .btn:hover {
   background: #e39600;
   color: #fff;
+}
+
+section.blueprints .container {
+  max-width: 1100px;
+  margin: auto;
+}
+section.blueprints .container img {
+  max-width: 120px;
+}
+section.blueprints .container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #132c37;
+}
+section.blueprints .container p {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7b8386;
+}
+
+section.team .container {
+  max-width: 1140px;
+  margin: auto;
+}
+section.team h2 {
+  font-size: 40px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.11px;
+  color: #132c37;
+}
+section.team .team-item {
+  margin-top: 60px;
+}
+section.team .team-item h2 {
+  font-size: 26px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #132c37;
+}
+section.team .team-item p {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7b8386;
+}
+section.team .team-item img {
+  border-radius: 6px;
+}
+
+section.narrowtextblock .container {
+  max-width: 750px;
+  margin: auto;
+}
+section.narrowtextblock .container p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

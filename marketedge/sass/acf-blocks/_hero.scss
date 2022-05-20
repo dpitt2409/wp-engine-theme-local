@@ -56,6 +56,7 @@ section.hero {
 			border-radius: 6px;
 			&.has-overlay {
 				margin-top: 40px;
+				margin-bottom: 150px;
 			}
 			.row {
 				width: 100%;
@@ -85,6 +86,7 @@ section.hero {
 				color: $ice-grey-medium;
 				font-size: 20px;
 				padding: 25px 0px;
+				max-width: 500px;
 				margin: 0;
 			}
 			img.overlay-image {
