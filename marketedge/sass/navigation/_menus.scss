@@ -114,6 +114,27 @@ footer {
 				padding: 6px 15px;
 			}
 		}
+		&.menu-item-has-children {
+			padding-right: 15px;
+			&::after {
+				content: url(images/icons-caret-down.svg);
+				height: 10px;
+				width: 10px;
+				position: absolute;
+				top: 5px;
+				right: 0px;
+				cursor: pointer;
+			}
+		}
+		&.btn {
+			background: $night-blue;
+			padding: 0;
+			a {
+				padding: 8px 18px;
+				font-size: 14px;
+				color: $white;
+			}
+		}
 	}
 }
 
