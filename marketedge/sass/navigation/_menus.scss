@@ -1,8 +1,12 @@
 .site-header {
 	background-color: #f9fafb;
 	position: fixed;
+	top: 0;
 	width: 100%;
 	z-index: 99;
+}
+body.admin-bar .site-header {
+	top: 31.99px;
 }
 body.scrolled {
 	.site-header {

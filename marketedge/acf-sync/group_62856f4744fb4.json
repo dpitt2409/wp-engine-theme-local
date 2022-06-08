@@ -1,6 +1,6 @@
 {
     "key": "group_62856f4744fb4",
-    "title": "[Block] - Large Hero with Overlay Image",
+    "title": "[Block] - Large Hero",
     "fields": [
         {
             "key": "field_62856fadd0be3",
@@ -23,30 +23,6 @@
             "key": "field_62856fe5d0be4",
             "label": "Background Image",
             "name": "background_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_62856feed0be5",
-            "label": "Overlay Image",
-            "name": "overlay_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -139,5 +115,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652914554
+    "modified": 1654701311
 }

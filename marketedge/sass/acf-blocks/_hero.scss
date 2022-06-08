@@ -5,7 +5,7 @@ section.hero {
 		position: relative;
 		padding: 120px 0px;
 		@include media-breakpoint-up(lg) {
-			padding: 200px 0px;
+			padding: 130px 0px;
 			margin-bottom: 200px;
 		}
 		.container {
@@ -39,6 +39,37 @@ section.hero {
 				right: 0;
 				bottom: -162px;
 				max-width: 800px;
+			}
+		}
+
+		svg {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			width: auto;
+			max-width: 50%;
+		}
+		#pipes {
+			stroke-width: 3px;
+		}
+
+		#dots {
+			stroke: white;
+			stroke-width: 3px;
+			-webkit-animation: dots 3s linear infinite;
+			animation: dots 3s linear infinite;
+		}
+
+		@keyframes dots {
+			to {
+				stroke-dashoffset: 300;
+			}
+		}
+
+		@-webkit-keyframes dots {
+			to {
+				stroke-dashoffset: 300;
 			}
 		}
 	}

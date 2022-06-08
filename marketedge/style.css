@@ -1985,8 +1985,13 @@ a.arrow-link .icon-chevrons-right {
 .site-header {
   background-color: #f9fafb;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 99;
+}
+
+body.admin-bar .site-header {
+  top: 31.99px;
 }
 
 body.scrolled .site-header {
@@ -8723,9 +8728,6 @@ footer ul.privacy-links li a {
 /*--------------------------------------------------------------
 ## Page Specific
 --------------------------------------------------------------*/
-.home main#primary {
-  padding-top: 0px;
-}
 .home section.accelerate {
   display: flex;
   align-items: center;
@@ -9497,7 +9499,7 @@ section.hero.large-hero {
 }
 @media (min-width: 992px) {
   section.hero.large-hero {
-    padding: 200px 0px;
+    padding: 130px 0px;
     margin-bottom: 200px;
   }
 }
@@ -9534,6 +9536,33 @@ section.hero.large-hero img.overlay-image {
     right: 0;
     bottom: -162px;
     max-width: 800px;
+  }
+}
+section.hero.large-hero svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  max-width: 50%;
+}
+section.hero.large-hero #pipes {
+  stroke-width: 3px;
+}
+section.hero.large-hero #dots {
+  stroke: white;
+  stroke-width: 3px;
+  -webkit-animation: dots 3s linear infinite;
+  animation: dots 3s linear infinite;
+}
+@keyframes dots {
+  to {
+    stroke-dashoffset: 300;
+  }
+}
+@-webkit-keyframes dots {
+  to {
+    stroke-dashoffset: 300;
   }
 }
 section.hero.simple-hero {
