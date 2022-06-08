@@ -78,6 +78,12 @@ jQuery(document).ready(function ($) {
 			}
 		}
 	});
+
+	// Expand mobile sub menus
+	$('li.menu-item-has-children').on('click', function (event) {
+		$(this).toggleClass('active');
+	});
+
 	// Add smooth scrolling to all links
 	$('a').on('click', function (event) {
 		// Make sure this.hash has a value before overriding default behavior

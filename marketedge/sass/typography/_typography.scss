@@ -8,12 +8,13 @@
 font-family: 'Fira Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Roboto:wght@700&family=Fira+Mono:wght@700&display=swap');
 
 // stylelint-disable value-keyword-case
 $font__main: 'Fira Sans', sans-serif;
 $font__itc: 'Fira Sans', sans-serif;
 $font__roboto: 'Roboto', sans-serif;
+$font__Fira_Mono: 'Fira Mono', monospace;
 // stylelint-enable value-keyword-case
 $font__code: monaco, consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 $font__pre: 'Courier 10 Pitch', courier, monospace;
