@@ -35,7 +35,7 @@ sm, md, lg, xl
 @include media-breakpoint-down(md)
 @include media-breakpoint-only(md)
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Roboto:wght@700&family=Fira+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Roboto:wght@700&family=Fira+Mono:wght@400;700&display=swap");
 .container {
   width: 100%;
   padding-right: 15px;
@@ -8682,8 +8682,9 @@ footer .site-footer ul.social li i {
 }
 footer .privacy .copyright {
   font-size: 16px;
-  color: #fff;
+  color: #afb8bc;
   margin-bottom: 10px;
+  font-family: "Fira Mono", monospace;
 }
 footer ul.privacy-links {
   list-style: none;
@@ -8694,14 +8695,6 @@ footer ul.privacy-links {
 footer ul.privacy-links li {
   margin-right: 10px;
 }
-footer ul.privacy-links li:before {
-  content: "";
-  display: inline-block;
-  border-left: 1px solid #fff;
-  height: 15px;
-  vertical-align: middle;
-  margin-right: 10px;
-}
 footer ul.privacy-links li:first-child:before {
   display: none;
 }
@@ -8709,6 +8702,7 @@ footer ul.privacy-links li a {
   color: #afb8bc;
   text-decoration: none;
   text-transform: initial;
+  font-size: 12px;
   font-weight: 500;
 }
 
