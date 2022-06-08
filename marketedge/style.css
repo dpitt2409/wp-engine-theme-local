@@ -9637,6 +9637,7 @@ section.hero.simple-hero .simple-hero-bg img.overlay-image {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    max-width: 475px;
   }
 }
 section.hero.simple-hero .simple-hero-bg.light h1,
