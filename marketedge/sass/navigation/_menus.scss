@@ -8,9 +8,11 @@
 body.admin-bar .site-header {
 	top: 31.99px;
 }
-body.scrolled {
-	.site-header {
-		opacity: 0.9;
+@media screen and (min-width: 1300px) {
+	body.scrolled {
+		.site-header {
+			opacity: 0.9;
+		}
 	}
 }
 .site-header {

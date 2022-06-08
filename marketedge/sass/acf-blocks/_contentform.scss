@@ -1,5 +1,7 @@
 section.contentform {
-	padding: 100px 0px;
+	@include media-breakpoint-up(lg) {
+		padding: 100px 0px;
+	}
 	.row {
 		align-items: center;
 	}
