@@ -15,9 +15,9 @@ section.twoup {
 					position: relative;
 					box-shadow: 0px 5px 15px 0px #dedeed;
 					border-radius: 10px;
+					max-width: 100%;
 					@include media-breakpoint-up(xl) {
 						left: -41px;
-						max-width: 461px;
 					}
 				}
 			}
@@ -33,10 +33,26 @@ section.twoup {
 				font-size: 18px;
 				color: $slate-medium;
 			}
+			@include media-breakpoint-up(lg) {
+				.twoup-content {
+					padding-left: 30px;
+					padding-right: 112px;
+				}
+			}
+			&.left {
+				@include media-breakpoint-up(lg) {
+					.twoup-content {
+						padding-left: 112px;
+					}
+				}
+			}
 			&.right {
 				background-color: transparent;
 				.row {
 					flex-direction: row-reverse;
+					.twoup-image {
+						text-align: right;
+					}
 					img {
 						left: unset;
 					}

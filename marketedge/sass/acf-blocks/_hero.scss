@@ -49,6 +49,9 @@ section.hero {
 			height: 100%;
 			width: auto;
 			max-width: 50%;
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
 		}
 		#pipes {
 			stroke-width: 3px;
