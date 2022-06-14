@@ -31,6 +31,7 @@ a.btn,
 	display: inline-block;
 	border-radius: 4px;
 	text-transform: uppercase;
+	transition: all linear 0.1s;
 	&.btn-secondary {
 		padding: 5px 19px 6px 20px;
 		border-radius: 5px;
@@ -51,6 +52,10 @@ a.btn,
 			color: $color__brand-highlight;
 			font-family: $font__Fira_Mono;
 		}
+	}
+	&:hover {
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		transform: scale(1.05);
 	}
 }
 span.slash {
