@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 			centerMode: true,
 			centerPadding: '10%',
 			slidesToShow: 4,
-			arrows: false,
+			arrows: true,
 			responsive: [
 				{
 					breakpoint: 1200,
@@ -50,7 +50,7 @@ jQuery(document).ready(function ($) {
 					centerMode: true,
 					centerPadding: '10%',
 					slidesToShow: 4,
-					arrows: false,
+					arrows: true,
 					responsive: [
 						{
 							breakpoint: 1200,
