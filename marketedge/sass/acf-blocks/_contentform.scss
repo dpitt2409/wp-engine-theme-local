@@ -57,5 +57,25 @@ section.contentform {
 		@include media-breakpoint-up(lg) {
 			padding: 60px 100px;
 		}
+		h2 {
+			font-size: 40px;
+			font-weight: 700;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: $white;
+		}
+		span {
+			color: white;
+			font-size: 12px;
+			font-weight: 400;
+			font-family: $font__Fira_Mono;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-transform: uppercase;
+		}
 	}
 }
