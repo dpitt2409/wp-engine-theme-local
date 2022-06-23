@@ -45,6 +45,24 @@ $heading = get_field('heading');
                             <p><?php echo $company_position;?></p>
                             <?php 
                         endif;
+
+                        if(have_rows('social_links')):
+                            ?>
+                            <div class="social">
+                            <?php
+                            while(have_rows('social_links')): the_row();
+                                $social_url = get_sub_field('url');
+                                $social_icon_svg = get_sub_field('social_icon_svg');
+                                if($social_url && $social_icon_svg):
+                                    ?>
+                                    <a href="<?php echo $social_url;?>" target="_blank"><?php echo $social_icon_svg;?></a>
+                                    <?php
+                                endif;
+                            endwhile;
+                            ?>
+                            </div>
+                            <?php
+                        endif;
                         ?>
                     </div>
                     <?php

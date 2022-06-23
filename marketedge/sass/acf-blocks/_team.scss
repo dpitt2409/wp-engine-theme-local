@@ -31,9 +31,22 @@ section.team {
 			line-height: normal;
 			letter-spacing: normal;
 			color: $slate-medium;
+			margin-bottom: 15px;
 		}
 		img {
 			border-radius: 6px;
+		}
+		.social a {
+			margin: 10px;
+			&:first-child {
+				margin-left: 0px;
+			}
+			&:last-child {
+				margin-right: 0px;
+			}
+			svg {
+				max-width: 25px;
+			}
 		}
 	}
 }
