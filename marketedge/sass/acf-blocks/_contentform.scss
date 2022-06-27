@@ -6,11 +6,11 @@ section.contentform {
 		align-items: center;
 	}
 	.content {
-		@include media-breakpoint-up(lg) {
+		/* @include media-breakpoint-up(lg) {
 			padding-right: 120px;
-		}
+		} */
 		h2 {
-			font-size: 40px;
+			font-size: 32px;
 			font-weight: 300;
 			font-stretch: normal;
 			font-style: normal;
