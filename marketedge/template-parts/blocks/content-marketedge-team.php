@@ -28,7 +28,7 @@ $heading = get_field('heading');
                     $name = get_sub_field('name');
                     $company_position = get_sub_field('company_position');
                     ?>
-                    <div class="col-md-3 team-item">
+                    <div class="col-md-6 col-lg-3 team-item">
                         <?php
                         if($image): 
                             ?>
