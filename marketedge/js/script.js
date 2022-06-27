@@ -16,6 +16,8 @@ jQuery(document).ready(function ($) {
 			centerPadding: '10%',
 			slidesToShow: 4,
 			arrows: true,
+			autoplay: true,
+			autoplaySpeed: 3000,
 			responsive: [
 				{
 					breakpoint: 1200,
@@ -51,6 +53,8 @@ jQuery(document).ready(function ($) {
 					centerPadding: '10%',
 					slidesToShow: 4,
 					arrows: true,
+					autoplay: true,
+					autoplaySpeed: 3000,
 					responsive: [
 						{
 							breakpoint: 1200,
