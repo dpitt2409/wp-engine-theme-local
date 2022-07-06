@@ -3,6 +3,32 @@
     "title": "[Block] - Two Up",
     "fields": [
         {
+            "key": "field_62c5f5a11fa91",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#f3fafe": "Blue",
+                "#f9fafb": "Grey",
+                "transparent": "Transparent"
+            },
+            "default_value": "transparent",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_62857d9516592",
             "label": "Image",
             "name": "two_up_image",
@@ -123,5 +149,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652925896
+    "modified": 1657140812
 }

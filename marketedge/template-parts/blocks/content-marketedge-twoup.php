@@ -10,6 +10,7 @@ if( !empty($block['className']) ) {
     $classes .= sprintf( ' %s', $block['className'] );
 }
 
+$background_color = get_field('background_color');
 $image = get_field('two_up_image');
 $image_position = get_field('two_up_image_position');
 $heading = get_field('two_up_heading');
@@ -18,7 +19,7 @@ $cta = get_field('two_up_cta');
 ?>
 <section id="<?php echo $id; ?>" class="<?php echo $classes;?>">  
     <div class="container">
-        <div class="twoup-bg <?php echo $image_position;?>">
+        <div class="twoup-bg <?php echo $image_position;?>" style="background-color: <?php echo $background_color;?>;">
             <div class="row">
                 <div class="col-md-6 twoup-image">
                     <?php if($image): ?>
