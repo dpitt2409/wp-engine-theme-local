@@ -23,7 +23,8 @@ section.cta {
 					letter-spacing: 0.89px;
 					text-align: center;
 					color: $white;
-					margin: 10px 0px 35px;
+					margin: 10px auto 35px;
+					max-width: 560px;
 				}
 				.btn {
 					background: $white;
