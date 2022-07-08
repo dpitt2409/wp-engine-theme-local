@@ -52,19 +52,22 @@ section.contentform {
 	}
 	.embed-form {
 		background: $night-blue;
-		padding: 60px;
+		padding: 25px;
 		border-radius: 6px;
 		@include media-breakpoint-up(lg) {
 			padding: 60px 100px;
 		}
 		h2 {
-			font-size: 40px;
+			font-size: 25px;
 			font-weight: 700;
 			font-stretch: normal;
 			font-style: normal;
 			line-height: normal;
 			letter-spacing: normal;
 			color: $white;
+			@include media-breakpoint-up(md) {
+				font-size: 40px;
+			}
 		}
 		span {
 			color: white;
@@ -79,6 +82,16 @@ section.contentform {
 		}
 		.hs-input {
 			width: 100%;
+		}
+		ul.no-list.hs-error-msgs {
+			li {
+				list-style-type: none;
+				label {
+					position: relative;
+					left: -20px;
+					font-size: 12px;
+				}
+			}
 		}
 	}
 }

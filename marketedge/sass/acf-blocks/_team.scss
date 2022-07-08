@@ -33,19 +33,17 @@ section.team {
 			color: $slate-medium;
 			margin-bottom: 15px;
 		}
+		.team-image {
+			position: relative;
+			overflow: hidden;
+			padding-bottom: 100%;
+		}
 		img {
+			position: absolute;
+			object-fit: contain;
 			border-radius: 6px;
-			object-fit: cover;
 			object-position: top;
 			width: 100%;
-			min-height: 100vw;
-			max-height: 100vw;
-			@include media-breakpoint-up(md) {
-				min-height: 55vw;
-			}
-			@include media-breakpoint-up(lg) {
-				min-height: 310px;
-			}
 		}
 		.social a {
 			margin: 10px;

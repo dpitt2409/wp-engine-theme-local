@@ -84,18 +84,22 @@ section.hero {
 			display: flex;
 			align-items: center;
 			position: relative;
-			padding: 120px 85px;
+			padding: 80px 40px;
 			margin: auto;
 			border-radius: 6px;
+			@include media-breakpoint-up(md) {
+				padding: 120px 85px;
+			}
 			&.has-overlay {
 				margin-top: 40px;
 				margin-bottom: 150px;
 			}
 			.row {
 				width: 100%;
-			}
-			@include media-breakpoint-down(md) {
-				padding: 120px 40px;
+				@include media-breakpoint-down(sm) {
+					padding: 0;
+					margin: 0;
+				}
 			}
 			.hero-shape {
 				border-top: 4px solid $color__brand-highlight;
@@ -111,7 +115,7 @@ section.hero {
 				padding: 0px;
 				color: $white;
 				@include media-breakpoint-down(md) {
-					font-size: 36px;
+					font-size: 30px;
 					line-height: 40px;
 				}
 			}
@@ -121,6 +125,9 @@ section.hero {
 				padding: 25px 0px;
 				max-width: 600px;
 				margin: 0;
+				@include media-breakpoint-down(sm) {
+					font-size: 18px;
+				}
 			}
 			img.overlay-image {
 				display: none;
@@ -135,6 +142,8 @@ section.hero {
 					top: 50%;
 					transform: translate(-50%, -50%);
 					max-width: 475px;
+					box-shadow: 0px 0px 10px 1px #dedede;
+					border-radius: 4px;
 				}
 			}
 

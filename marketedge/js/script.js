@@ -12,9 +12,7 @@ jQuery(document).ready(function ($) {
 	if (customers_slider.length) {
 		customers_slider.slick({
 			infinite: true,
-			centerMode: true,
-			centerPadding: '10%',
-			slidesToShow: 4,
+			slidesToShow: 3,
 			arrows: true,
 			autoplay: true,
 			autoplaySpeed: 3000,
@@ -22,7 +20,6 @@ jQuery(document).ready(function ($) {
 				{
 					breakpoint: 1200,
 					settings: {
-						centerPadding: '10%',
 						slidesToShow: 3,
 					},
 				},
@@ -30,8 +27,6 @@ jQuery(document).ready(function ($) {
 					breakpoint: 800,
 					settings: {
 						infinite: true,
-						centerMode: true,
-						centerPadding: '15%',
 						slidesToShow: 2,
 					},
 				},

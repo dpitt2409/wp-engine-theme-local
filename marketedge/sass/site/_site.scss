@@ -116,6 +116,8 @@ footer {
 	.site-footer {
 		display: flex;
 		justify-content: space-between;
+		max-width: 1270px;
+		margin: auto;
 		p {
 			margin: 0;
 			letter-spacing: 1px;
@@ -158,7 +160,7 @@ footer {
 						background: #7b8386;
 						top: 0;
 						position: absolute;
-						left: 55%;
+						left: 70%;
 					}
 				}
 			}

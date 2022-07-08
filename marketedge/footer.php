@@ -50,7 +50,7 @@ endif;
 	<footer id="colophon">
         <div class="gradient-line"></div>
         <div class="site-footer row">
-            <div class="site-info site-branding col-md-5">
+            <div class="site-info site-branding col-md-4">
                 <a href="<?php echo home_url();?>" rel="home">
                     <?php 
                     $footer_logo = get_field('footer_logo','option');
@@ -103,7 +103,7 @@ endif;
                     ?>
                 </div>
             </div>
-            <div class="footer-links col-md-7">
+            <div class="footer-links col-md-8">
                 <?php
                 if(have_rows('footer_menus', 'option')):
                     ?>
