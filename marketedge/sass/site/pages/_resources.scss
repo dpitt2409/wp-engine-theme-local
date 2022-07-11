@@ -73,8 +73,9 @@
 							margin: 0px;
 							svg {
 								position: relative;
-								top: 3px;
+								top: 7px;
 								margin-right: 5px;
+								width: 18px;
 							}
 						}
 					}
@@ -128,6 +129,7 @@
 									margin: 13px 0px 16px;
 									@include media-breakpoint-down(sm) {
 										font-size: 16.9px;
+										margin: 8px 0px;
 									}
 								}
 								h3 {
@@ -159,8 +161,9 @@
 										margin: 0px;
 										svg {
 											position: relative;
-											top: 3px;
+											top: 7px;
 											margin-right: 5px;
+											width: 18px;
 										}
 									}
 								}
