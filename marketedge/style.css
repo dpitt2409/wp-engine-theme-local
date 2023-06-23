@@ -9743,6 +9743,24 @@ section.hero.simple-hero .simple-hero-bg.light h1,
 section.hero.simple-hero .simple-hero-bg.light p {
   color: #132c37;
 }
+section.hero.simple-hero .tags {
+  display: flex;
+  align-items: center;
+}
+section.hero.simple-hero .tags p {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+section.hero.simple-hero .tag {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+}
+section.hero.simple-hero .tag + .tag {
+  margin-left: 10px;
+}
 
 section.testimonial .container {
   max-width: 1180px;
@@ -10209,6 +10227,15 @@ section.article .main .main-content blockquote {
 }
 section.article .main .main-content ul {
   margin-left: 0;
+  list-style: none;
+  padding-left: 0;
+}
+section.article .main .main-content li:before {
+  content: "•";
+  font-size: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #e39600;
 }
 section.article .sidebar {
   border-left: solid 2px #dce6eb;
@@ -10257,11 +10284,14 @@ section.article .sidebar a {
 }
 section.article .sidebar .demo-cta {
   margin-top: 45px;
+  border: solid 2px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(266deg, #e2c46b 10%, #387d96 93%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 4px;
+}
+section.article .sidebar .demo-cta__content {
   padding: 30px;
-  border-width: 2px;
-  border-style: solid;
-  border-image-source: linear-gradient(249deg, #e2c46b 111%, #387db3 44%, #010101 0%, #7d7d7d -1%);
-  border-image-slice: 1;
 }
 section.article .sidebar .demo-cta__copy {
   font-weight: bold;
@@ -10277,6 +10307,20 @@ section.article .sidebar .demo-cta__link {
   padding: 9px 20px;
   border-radius: 4px;
   letter-spacing: 0.5px;
+}
+section.article .sidebar .share {
+  margin-top: 30px;
+  background-color: #e39600;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 0.89px;
+  padding: 12px 0;
+  cursor: pointer;
 }
 
 #comments {

@@ -90,9 +90,15 @@ $demoLink = 'https://www.google.com';
         <a href="/" class="link">Continue reading the MarketEdge Blog</a>
 
         <div class="demo-cta">
-            <p class="demo-cta__copy"><?php echo $demoCopy;?></p>
-            <a class="demo-cta__link" href="<?php echo $demoLink;?>">Book Now</a>
+            <div class="demo-cta__content">
+                <p class="demo-cta__copy"><?php echo $demoCopy;?></p>
+                <a class="demo-cta__link" href="<?php echo $demoLink;?>">Book Now</a>
+            </div>
         </div>
+
+        <button class="share">
+            Share 
+        </button>
 
     </div>
 </section>

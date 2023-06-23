@@ -154,5 +154,27 @@ section.hero {
 				}
 			}
 		}
+
+		.tags {
+			display: flex;
+			align-items: center;
+
+			p {
+				padding: 5px 10px;
+				font-size: 14px;
+				color: #ffffff;
+			}
+		}
+
+		.tag {
+			padding: 5px 10px;
+			border-radius: 3px;
+			background:rgba(0,0,0, 0.7);
+			text-transform: capitalize;
+		}
+
+		.tag + .tag {
+			margin-left: 10px;
+		}
 	}
 }

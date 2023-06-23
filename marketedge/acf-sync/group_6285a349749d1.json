@@ -131,6 +131,25 @@
             "new_lines": ""
         },
         {
+            "key": "field_6285a3497865f",
+            "label": "Tags",
+            "name": "tags",
+            "type": "text",
+            "instructions": "Add tags, separated by commas.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_6285a349786a7",
             "label": "CTA",
             "name": "cta",

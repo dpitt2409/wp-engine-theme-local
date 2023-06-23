@@ -25,6 +25,9 @@ endif;
 $heading = get_field('heading');
 $content = get_field('content');
 $cta = get_field('cta');
+
+$tags = get_field('tags');
+$tagsArray = explode(',', $tags);
 ?>
 <section id="<?php echo $id; ?>" class="<?php echo $classes;?>">  
     <div class="container">
@@ -41,6 +44,16 @@ $cta = get_field('cta');
                     <?php if($cta): ?>
                         <a class="btn btn-primary" href="<?php echo $cta['url'];?>" target="<?php echo $cta['target'];?>"><?php echo $cta['title'];?></a>
                     <?php endif; ?>
+
+                    <div class="tags">
+                        <?php if($tags): ?>
+                            <?php foreach($tagsArray as $key => $value)
+                            { ?>
+                            <p class="tag"> <?php echo $value ?></p>
+                            <?php 
+                            }
+                        endif; ?>
+                    </div>
                 </div>
                 <?php if($overlay_image): ?>
                     <div class="<?php echo $column_class;?>">
