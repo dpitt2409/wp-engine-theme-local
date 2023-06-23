@@ -26,8 +26,14 @@ $heading = get_field('heading');
 $content = get_field('content');
 $cta = get_field('cta');
 
-$tags = get_field('tags');
-$tagsArray = explode(',', $tags);
+
+// TODO: Need to figure out a way tot only care about these t hings if the page is a post
+// Dont want to show this stuff on non blog pages!
+$tagsArray = get_the_tags();
+
+$date = get_the_date('l, F j, Y');
+
+$readTime = get_field('length');
 ?>
 <section id="<?php echo $id; ?>" class="<?php echo $classes;?>">  
     <div class="container">
@@ -45,11 +51,21 @@ $tagsArray = explode(',', $tags);
                         <a class="btn btn-primary" href="<?php echo $cta['url'];?>" target="<?php echo $cta['target'];?>"><?php echo $cta['title'];?></a>
                     <?php endif; ?>
 
+                    <div class="article-meta">
+                        <?php if($date): ?>    
+                            <span class="article-meta__date"><?php echo $date;?></span>    
+                        <?php endif; ?>
+
+                        <?php if($readTime): ?>
+                            <span>| <?php echo $readTime;?> min</span>
+                        <?php endif; ?>
+                    </div>
+
                     <div class="tags">
-                        <?php if($tags): ?>
-                            <?php foreach($tagsArray as $key => $value)
+                        <?php if(!empty($tagsArray)): ?>
+                            <?php foreach($tagsArray as $tag)
                             { ?>
-                            <p class="tag"> <?php echo $value ?></p>
+                            <p class="tag"> <?php echo $tag->name ?></p>
                             <?php 
                             }
                         endif; ?>

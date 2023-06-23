@@ -155,7 +155,18 @@ section.hero {
 			}
 		}
 
+		.article-meta {
+			margin-top: 10px;
+			font-size: 20px;
+			color: #d0d0d0;
+		}
+
+		.article-meta__date {
+			text-transform: uppercase;
+		}
+
 		.tags {
+			margin-top: 10px;
 			display: flex;
 			align-items: center;
 

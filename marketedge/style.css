@@ -9743,7 +9743,16 @@ section.hero.simple-hero .simple-hero-bg.light h1,
 section.hero.simple-hero .simple-hero-bg.light p {
   color: #132c37;
 }
+section.hero.simple-hero .article-meta {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #d0d0d0;
+}
+section.hero.simple-hero .article-meta__date {
+  text-transform: uppercase;
+}
 section.hero.simple-hero .tags {
+  margin-top: 10px;
   display: flex;
   align-items: center;
 }

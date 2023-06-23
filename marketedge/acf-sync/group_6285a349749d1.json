@@ -132,10 +132,10 @@
         },
         {
             "key": "field_6285a3497865f",
-            "label": "Tags",
-            "name": "tags",
-            "type": "text",
-            "instructions": "Add tags, separated by commas.",
+            "label": "Length",
+            "name": "length",
+            "type": "number",
+            "instructions": "Enter read time in minutes.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
