@@ -27,9 +27,8 @@ $content = get_field('content');
 $cta = get_field('cta');
 
 
-// TODO: Need to figure out a way tot only care about these t hings if the page is a post
-// Dont want to show this stuff on non blog pages!
-$tagsArray = get_the_tags();
+// Only show tags on article posts
+$tagsArray = has_block('acf/marketedge-article') ? get_the_tags() : null;
 
 $date = get_the_date('l, F j, Y');
 

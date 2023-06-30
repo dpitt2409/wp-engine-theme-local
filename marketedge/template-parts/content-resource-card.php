@@ -17,21 +17,30 @@ $link_type = get_field('link_type', $resource_id);
 $link_type_file = get_field('file', $resource_id);
 $link_type_url = get_field('url', $resource_id);
 $featured_cta_text = get_field('featured_cta_text', $featured_resource_id);
+// var_dump(compact('resource_id', 'time_to_read', 'short_description', 'link_type', 'link_type_file', 'link_type_url', 'featured_cta_text'));
 
-if($link_type === 'file'):
-    $url = $link_type_file;
+if ($args['card_type'] && $args['card_type'] === 'blog') :
+    $url = get_permalink();
     $url_target = '_blank';
 else:
-    $url = $link_type_url;
-    $url_target = $url['target'];
+    if($link_type === 'file'):
+        $url = $link_type_file['url'];
+        $url_target = '_blank';
+    else:
+        $url = $link_type_url['url'];
+        $url_target = $link_type_url['target'];
+    endif;
 endif;
 
-$terms = get_the_terms( $resource_id, 'resource_type' );
-$term = array_pop($terms);
-$term_icon = get_field('icon', $term->taxonomy . '_' . $term->term_id);
+$termType = $args['term_type'] ? $args['term_type'] : 'resource_type';
+$terms = get_the_terms( $resource_id, $termType );
+if (!empty($terms)) {
+    $term = array_pop($terms);
+    $term_icon = get_field('icon', $term->taxonomy . '_' . $term->term_id);
+}
 ?>
 <div class="<?php echo $class;?> resource">
-    <a href="<?php echo $url['url'];?>" target="<?php echo $url_target;?>" class="download-link">
+    <a href="<?php echo $url;?>" target="<?php echo $url_target;?>" class="download-link">
         <div class="resource-content">
             <div class="row">
                 <div class="<?php echo $class_resource_content;?> resource-description">

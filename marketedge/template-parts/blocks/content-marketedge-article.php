@@ -17,10 +17,10 @@ $authorSubtitle = $author['author_subtitle'];
 $authorImage = $author['author_image'];
 
 $mainContent = get_field('main_content');
+$readTime = get_field('time_to_read');
 
 // Recent articles -- hardcoded for now per David's request
 $articleTitle = '5 Ways to Boost RFP Proposal Sales';
-$readTime = '5 minutes';
 
 // Demo CTA hardcoded
 $demoCopy = 'Book a demo for the most powerful SLED data platform, ever.';

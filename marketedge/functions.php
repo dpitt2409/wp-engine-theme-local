@@ -148,6 +148,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Include Post Types
  */
 include('inc/post_types/resources.php');
+include('inc/post_types/blog-posts.php');
 
 /**
  * Include ACF Options
@@ -170,3 +171,22 @@ function marketedge_acf_json_load_point( $paths ) {
     // return
     return $paths;
 }
+/**
+ * ACF Default Image
+ */
+function add_default_value_to_image_field($field) {
+	acf_render_field_setting( $field, array(
+		'label'      => __('Default Image ID','acf'),
+		'instructions'  => __('Appears when creating a new post','acf'),
+		'type'      => 'image',
+		'name'      => 'default_value',
+	));
+}
+add_action('acf/render_field_settings/type=image', 'add_default_value_to_image_field', 20);
+function reset_default_image($value, $post_id, $field) {
+  if (!$value) {
+    $value = $field['default_value'];
+  }
+  return $value;
+}
+add_filter('acf/load_value/type=image', 'reset_default_image', 10, 3);

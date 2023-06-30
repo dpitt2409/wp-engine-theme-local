@@ -3,6 +3,63 @@
     "title": "Article",
     "fields": [
         {
+            "key": "field_649f3489968ad",
+            "label": "Featured",
+            "name": "featured",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_649dcd76f5bcd",
+            "label": "Time To Read",
+            "name": "time_to_read",
+            "type": "text",
+            "instructions": "e.g. 5 Minutes",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_649f58aa4e0b8",
+            "label": "Short Description",
+            "name": "short_description",
+            "type": "textarea",
+            "instructions": "Text that shows on the card in the Blogs page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_6494adf434daa",
             "label": "Author Info",
             "name": "author_info",
@@ -104,9 +161,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "post_type",
                 "operator": "==",
-                "value": "acf\/marketedge-article"
+                "value": "blog-posts"
             }
         ]
     ],
@@ -119,5 +176,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687474415
+    "modified": 1688164640
 }

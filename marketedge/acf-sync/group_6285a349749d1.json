@@ -66,7 +66,8 @@
             "max_width": "",
             "max_height": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "",
+            "default_value": 311
         },
         {
             "key": "field_6286a626bb671",
@@ -131,25 +132,6 @@
             "new_lines": ""
         },
         {
-            "key": "field_6285a3497865f",
-            "label": "Length",
-            "name": "length",
-            "type": "number",
-            "instructions": "Enter read time in minutes.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
             "key": "field_6285a349786a7",
             "label": "CTA",
             "name": "cta",
@@ -163,6 +145,25 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_6494c8e750999",
+            "label": "Description",
+            "name": "description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -183,5 +184,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653005355
+    "modified": 1688057969
 }

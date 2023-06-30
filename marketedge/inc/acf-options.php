@@ -60,6 +60,7 @@ function marketedge_gutenburg_acf_blocks() {
                 'render_callback'	=> 'marketedge_render_acf_block',
                 'category'			=> 'marketedge',
                 'keywords'			=> array( 'Simple Hero' ),
+                'mode'              => 'edit',
                 'example'           => array(
                     'attributes' => array(
                         'mode' => 'preview',
@@ -136,6 +137,7 @@ function marketedge_gutenburg_acf_blocks() {
                 'render_callback'	=> 'marketedge_render_acf_block',
                 'category'			=> 'marketedge',
                 'keywords'			=> array( 'CTA' ),
+                'mode'              => 'edit',
                 'example'           => array(
                     'attributes' => array(
                         'mode' => 'preview',
@@ -243,6 +245,26 @@ function marketedge_gutenburg_acf_blocks() {
 		    )
         );
 
+        // register blogs block
+        acf_register_block(
+            array(
+                'name'				=> 'marketedge-blogs',
+                'title'				=> __('Blogs'),
+                'description'		=> __('Blogs'),
+                'render_callback'	=> 'marketedge_render_acf_block',
+                'category'			=> 'marketedge',
+                'keywords'			=> array( 'Blogs' ),
+                'example'           => array(
+                    'attributes' => array(
+                        'mode' => 'preview',
+                        'data' => array(
+                            'preview_image' => get_template_directory_uri().'/template-parts/blocks/previews/block-resources-preview.jpg',
+                        ),
+                    )
+                )
+		    )
+        );
+
         // register article block
 		acf_register_block(
             array(
@@ -252,6 +274,7 @@ function marketedge_gutenburg_acf_blocks() {
                 'render_callback'	=> 'marketedge_render_acf_block',
                 'category'			=> 'marketedge',
                 'keywords'			=> array( 'Article' ),
+                'mode'              => 'edit',
                 'example'           => array(
                     'attributes' => array(
                         'mode' => 'preview',
